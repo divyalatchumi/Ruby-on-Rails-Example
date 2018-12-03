@@ -9,4 +9,6 @@ class Customer
 end
 
 obj = Customer.new("1","John Doe")
+obj2 = Customer.new("2","Jane Doe")
 obj.display
+obj2.display
