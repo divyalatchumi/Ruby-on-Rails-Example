@@ -5,6 +5,7 @@
   <p>
     <%= post_form.label :name %><br />
     <%= post_form.text_field :name %>
+    <%= post_form.text_field :name_confirmation %>
   </p>
   <p>
     <%= post_form.label :title, "title" %><br />
@@ -13,6 +14,10 @@
   <p>
     <%= post_form.label :content %><br />
     <%= post_form.text_area :content %>
+  </p>
+  <p>
+    <%= post_form.label :terms_of_service %><br />
+    <%= post_form.check_box :terms_of_service %>
   </p>
   <h2>Tags</h2>
   <% post_form.fields_for :tags do |tag_form| %>
