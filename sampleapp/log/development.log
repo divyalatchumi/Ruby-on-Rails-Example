@@ -2829,3 +2829,533 @@ Migrating to AddUserToTags (20181205071646)
   [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
   [4;35;1mSQL (0.4ms)[0m   [0mdescribe `tags`[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (23.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (8.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddUserToTags (20181205071646)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'sampleapp_development.tag' doesn't exist: ALTER TABLE `tag` DROP `user`[0m
+  [4;36;1mSQL (30.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (14.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddUserToTags (20181205071646)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'sampleapp_development.tag' doesn't exist: ALTER TABLE `tag` DROP `user`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (33.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddUserToTags (20181205071646)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Can't DROP 'user'; check that column/key exists: ALTER TABLE `tags` DROP `user`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to AddUserToTags (20181205071646)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (29.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (28.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddUserToTags (20181205071646)
+  [4;36;1mSQL (585.8ms)[0m   [0;1mALTER TABLE `tags` DROP `user`[0m
+  [4;35;1mSQL (88.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181205071646'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (25.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (20.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTags (20181205065417)
+  [4;36;1mSQL (194.2ms)[0m   [0;1mDROP TABLE `tags`[0m
+  [4;35;1mSQL (44.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181205065417'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (5.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+  [4;36;1mSQL (335.8ms)[0m   [0;1mCREATE TABLE `tags` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `post_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205065417')[0m
+Migrating to AddUserToTags (20181205071646)
+  [4;36;1mSQL (776.8ms)[0m   [0;1mALTER TABLE `tags` ADD `user` tinyint(1) DEFAULT 0[0m
+  [4;35;1mTag Update (0.3ms)[0m   [0mUPDATE `tags` SET user = 1 [0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20181205071646')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `comments`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `comments`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (21.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (19.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2018-12-05 13:04:58) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 14ms (View: 9, DB: 41) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2018-12-05 13:05:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;36;1mTag Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 1) [0m
+Rendered posts/_forms (12.0ms)
+Completed in 19ms (View: 12, DB: 4) | 200 OK [http://localhost/posts/1/edit]
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (27.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2018-12-05 13:05:08) [PUT]
+  Parameters: {"id"=>"1", "authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "post"=>{"tags_attributes"=>{"0"=>{"name"=>""}}, "content"=>"Another post without title or name for checking and editing", "name"=>"Divya", "title"=>"Sample"}, "commit"=>"Save"}
+  [4;36;1mPost Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Update (0.3ms)[0m   [0mUPDATE `posts` SET `updated_at` = '2018-12-05 07:35:08', `content` = 'Another post without title or name for checking and editing' WHERE `id` = 1[0m
+  [4;36;1mSQL (46.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 58ms (DB: 76) | 302 Found [http://localhost/posts/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2018-12-05 13:05:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 13ms (View: 7, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (19.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (18.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddUserToTags (20181205071646)
+  [4;36;1mSQL (763.0ms)[0m   [0;1mALTER TABLE `tags` DROP `user`[0m
+  [4;35;1mSQL (44.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181205071646'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (31.4ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (22.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (23.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (12.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to AddUserToTags (20181205074000)
+  [4;36;1mSQL (632.2ms)[0m   [0;1mALTER TABLE `tags` ADD `user` varchar(255)[0m
+  [4;35;1mSQL (44.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205074000')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (27.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (23.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (12.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddUserToTags (20181205074000)
+  [4;36;1mSQL (619.9ms)[0m   [0;1mALTER TABLE `tags` DROP `user`[0m
+  [4;35;1mSQL (63.5ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181205074000'[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (81.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (52.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (16.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to AddUserToTags (20181205074000)
+  [4;36;1mSQL (534.2ms)[0m   [0;1mALTER TABLE `tags` ADD `user` varchar(255)[0m
+  [4;35;1mSQL (55.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205074000')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (17.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (31.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to AddUserToTags (20181205074000)
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (330.9ms)[0m   [0;1mCREATE TABLE `sampleTableWithoutId` (`name` varchar(255), `primary_key` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (77.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205075131')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (54.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (16.4ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (27.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (11.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (195.9ms)[0m   [0;1mDROP TABLE `sampleTableWithoutId`[0m
+  [4;35;1mSQL (44.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181205075131'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (41.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to AddUserToTags (20181205074000)
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (452.6ms)[0m   [0;1mCREATE TABLE `sampleTableWithoutId` (`name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (44.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205075131')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (22.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (62.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (24.7ms)[0m   [0mSHOW FIELDS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (28.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (123.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (18.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (163.3ms)[0m   [0;1mDROP TABLE `sampleTableWithoutId`[0m
+  [4;35;1mSQL (33.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181205075131'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (54.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to AddUserToTags (20181205074000)
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (396.0ms)[0m   [0;1mCREATE TABLE `sampleTableWithoutId` (`name` int(11) auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (44.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205075131')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (40.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (36.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to AddUserToTags (20181205074000)
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (21.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (218.7ms)[0m   [0;1mDROP TABLE `sampleTableWithoutId`[0m
+  [4;35;1mSQL (44.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181205075131'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (21.1ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to AddUserToTags (20181205074000)
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (312.1ms)[0m   [0;1mCREATE TABLE `sampleTableWithoutId` (`name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (88.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205075131')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;35;1mSQL (28.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (41.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2018-12-05 15:22:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 13ms (View: 6, DB: 72) | 200 OK [http://localhost/posts/1]
+  [4;35;1mSQL (47.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (152.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2018-12-05 15:22:42) [GET]
+
+ActionController::RoutingError (No route matches "/hello_world" with {:method=>:get}):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (31.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (84.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2018-12-05 15:22:57) [GET]
+
+ActionController::RoutingError (No route matches "/hello_world/hello" with {:method=>:get}):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (22.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloWorldController#hello (for 127.0.0.1 at 2018-12-05 15:24:18) [GET]
+Rendering hello_world/hello
+Completed in 4ms (View: 3, DB: 22) | 200 OK [http://localhost/hello_world/hello]
+  [4;36;1mSQL (21.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (11.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (346.1ms)[0m   [0;1mDROP TABLE `sampleTableWithoutId`[0m
+  [4;35;1mSQL (44.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181205075131'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (42.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (305.0ms)[0m   [0;1mCREATE TABLE `sampleTableWithoutId` (`name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (88.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205075131')[0m
+Migrating to AddUserToTags (20181205100330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Duplicate column name 'user': ALTER TABLE `tags` ADD `user` varchar(255)[0m
+  [4;36;1mSQL (15.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
