@@ -4927,3 +4927,366 @@ Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/posts]
   [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
   [4;35;1mTag Create (0.4ms)[0m   [0mINSERT INTO `tags` (`user`, `created_at`, `updated_at`, `name`, `post_id`) VALUES(NULL, '2018-12-06 05:32:10', '2018-12-06 05:32:10', 'small', NULL)[0m
   [4;36;1mSQL (131.2ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to SampleTableWithoutId (20181205075131)
+Migrating to AddUserToTags (20181205100330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Duplicate column name 'user': ALTER TABLE `tags` ADD `user` varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (21.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (230.2ms)[0m   [0;1mDROP TABLE `sampleTableWithoutId`[0m
+  [4;35;1mSQL (117.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181205075131'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (514.0ms)[0m   [0;1mCREATE TABLE `sampleTableWithoutId` (`name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (76.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205075131')[0m
+Migrating to AddUserToTags (20181205100330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Duplicate column name 'user': ALTER TABLE `tags` ADD `user` varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (152.3ms)[0m   [0;1mDROP TABLE `sampleTableWithoutId`[0m
+  [4;35;1mSQL (33.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181205075131'[0m
+Migrating to CreateTags (20181205065417)
+  [4;36;1mSQL (152.6ms)[0m   [0;1mDROP TABLE `tags`[0m
+  [4;35;1mSQL (55.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181205065417'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (60.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+  [4;36;1mSQL (384.3ms)[0m   [0;1mCREATE TABLE `tags` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `post_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (44.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205065417')[0m
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (334.6ms)[0m   [0;1mCREATE TABLE `sampleTableWithoutId` (`name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205075131')[0m
+Migrating to AddUserToTags (20181205100330)
+  [4;36;1mSQL (656.4ms)[0m   [0;1mALTER TABLE `tags` ADD `user` varchar(255)[0m
+  [4;35;1mSQL (43.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205100330')[0m
+Migrating to CreateArtists (20181206060411)
+  [4;36;1mSQL (399.0ms)[0m   [0;1mCREATE TABLE `artists` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (33.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181206060411')[0m
+Migrating to CreateGenres (20181206060435)
+  [4;36;1mSQL (285.7ms)[0m   [0;1mCREATE TABLE `genres` (`id` int(11) auto_increment PRIMARY KEY, `genre` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (32.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181206060435')[0m
+Migrating to CreateAlbums (20181206060533)
+  [4;36;1mSQL (320.4ms)[0m   [0;1mCREATE TABLE `albums` (`id` int(11) auto_increment PRIMARY KEY, `albumname` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (32.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181206060533')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `albums`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `albums`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `artists`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `artists`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `artists`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `genres`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `genres`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `genres`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to SampleTableWithoutId (20181205075131)
+Migrating to AddUserToTags (20181205100330)
+Migrating to CreateArtists (20181206060411)
+Migrating to CreateGenres (20181206060435)
+Migrating to CreateAlbums (20181206060533)
+Migrating to CreateSongs (20181206061129)
+  [4;36;1mSQL (371.7ms)[0m   [0;1mCREATE TABLE `songs` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (799.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181206061129')[0m
+  [4;36;1mSQL (9.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `albums`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `artists`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `artists`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `artists`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `genres`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `genres`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `genres`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `sampleTableWithoutId`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `songs`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `songs`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `songs`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to SampleTableWithoutId (20181205075131)
+Migrating to AddUserToTags (20181205100330)
+Migrating to CreateArtists (20181206060411)
+Migrating to CreateGenres (20181206060435)
+Migrating to CreateAlbums (20181206060533)
+Migrating to CreateSongs (20181206061129)
+  [4;36;1mSQL (33.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (13.9ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `albums`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `artists`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `artists`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `artists`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `genres`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `genres`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `genres`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `songs`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `songs`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `songs`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2018-12-06 11:55:30) [GET]
+  [4;36;1mPost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (16.3ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 35ms (View: 10, DB: 17) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-06 11:55:39) [GET]
+Rendering home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArtist Columns (22.9ms)[0m   [0;1mSHOW FIELDS FROM `artists`[0m
+  [4;35;1mSQL (21.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mArtist Create (12.9ms)[0m   [0;1mINSERT INTO `artists` (`updated_at`, `created_at`, `name`) VALUES('2018-12-06 06:28:09', '2018-12-06 06:28:09', 'Eminem')[0m
+  [4;35;1mSQL (89.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArtist Columns (24.9ms)[0m   [0;1mSHOW FIELDS FROM `artists`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mArtist Create (6.6ms)[0m   [0;1mINSERT INTO `artists` (`name`, `created_at`, `updated_at`) VALUES('Eminem', '2018-12-06 06:29:59', '2018-12-06 06:29:59')[0m
+  [4;35;1mSQL (196.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTag Columns (27.8ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTag Create (12.8ms)[0m   [0;1mINSERT INTO `tags` (`name`, `created_at`, `user`, `post_id`, `updated_at`) VALUES('large', '2018-12-06 06:36:59', NULL, NULL, '2018-12-06 06:36:59')[0m
+  [4;35;1mSQL (76.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTag Create (0.3ms)[0m   [0mINSERT INTO `tags` (`name`, `created_at`, `user`, `post_id`, `updated_at`) VALUES('large', '2018-12-06 06:37:12', NULL, NULL, '2018-12-06 06:37:12')[0m
+  [4;36;1mSQL (98.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTag Columns (21.2ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTag Create (32.6ms)[0m   [0;1mINSERT INTO `tags` (`updated_at`, `post_id`, `user`, `created_at`, `name`) VALUES('2018-12-06 06:38:00', NULL, NULL, '2018-12-06 06:38:00', 'large')[0m
+  [4;35;1mSQL (68.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mGenre Columns (27.8ms)[0m   [0;1mSHOW FIELDS FROM `genres`[0m
+  [4;35;1mSQL (7.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mGenre Create (0.3ms)[0m   [0;1mINSERT INTO `genres` (`genre`, `created_at`, `updated_at`) VALUES('rock', '2018-12-06 06:40:17', '2018-12-06 06:40:17')[0m
+  [4;35;1mSQL (53.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArtist Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `artists`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mArtist Create (39.1ms)[0m   [0;1mINSERT INTO `artists` (`created_at`, `updated_at`, `name`) VALUES('2018-12-06 06:43:13', '2018-12-06 06:43:13', 'Eminem')[0m
+  [4;35;1mSQL (66.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mAlbums Columns (31.5ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (19.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSongs (20181206061129)
+  [4;36;1mSQL (193.1ms)[0m   [0;1mDROP TABLE `songs`[0m
+  [4;35;1mSQL (44.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181206061129'[0m
+Migrating to CreateAlbums (20181206060533)
+  [4;36;1mSQL (176.7ms)[0m   [0;1mDROP TABLE `albums`[0m
+  [4;35;1mSQL (44.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181206060533'[0m
+Migrating to CreateGenres (20181206060435)
+  [4;36;1mSQL (243.5ms)[0m   [0;1mDROP TABLE `genres`[0m
+  [4;35;1mSQL (33.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181206060435'[0m
+Migrating to CreateArtists (20181206060411)
+  [4;36;1mSQL (144.9ms)[0m   [0;1mDROP TABLE `artists`[0m
+  [4;35;1mSQL (44.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20181206060411'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (27.2ms)[0m   [0mSHOW FIELDS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (26.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to SampleTableWithoutId (20181205075131)
+Migrating to AddUserToTags (20181205100330)
+Migrating to CreateArtists (20181206060411)
+  [4;36;1mSQL (360.5ms)[0m   [0;1mCREATE TABLE `artists` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (44.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181206060411')[0m
+Migrating to CreateGenres (20181206060435)
+  [4;36;1mSQL (321.4ms)[0m   [0;1mCREATE TABLE `genres` (`id` int(11) auto_increment PRIMARY KEY, `genre` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (99.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181206060435')[0m
+Migrating to CreateAlbums (20181206060533)
+  [4;36;1mSQL (399.1ms)[0m   [0;1mCREATE TABLE `albums` (`id` int(11) auto_increment PRIMARY KEY, `albumname` varchar(255), `artist_id` int(11), `genre_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (44.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181206060533')[0m
+Migrating to CreateSongs (20181206061129)
+  [4;36;1mSQL (366.0ms)[0m   [0;1mCREATE TABLE `songs` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `album_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (44.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181206061129')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (24.2ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `albums`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `albums`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `artists`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `artists`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `artists`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `genres`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `genres`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `genres`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `songs`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `songs`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `songs`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArtist Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `artists`[0m
+  [4;35;1mSQL (18.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mArtist Create (4.0ms)[0m   [0;1mINSERT INTO `artists` (`created_at`, `name`, `updated_at`) VALUES('2018-12-06 06:46:44', 'Eminem', '2018-12-06 06:46:44')[0m
+  [4;35;1mSQL (57.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mGenre Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `genres`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mGenre Create (1.7ms)[0m   [0;1mINSERT INTO `genres` (`genre`, `created_at`, `updated_at`) VALUES('rock', '2018-12-06 06:46:52', '2018-12-06 06:46:52')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mGenre Create (0.5ms)[0m   [0mINSERT INTO `genres` (`genre`, `created_at`, `updated_at`) VALUES('pop', '2018-12-06 06:47:01', '2018-12-06 06:47:01')[0m
+  [4;36;1mSQL (83.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mAlbums Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAlbums Create (0.4ms)[0m   [0mINSERT INTO `albums` (`genre_id`, `albumname`, `created_at`, `artist_id`, `updated_at`) VALUES(1, 'A', '2018-12-06 06:47:21', 2, '2018-12-06 06:47:21')[0m
+  [4;36;1mSQL (60.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSong Columns (28.2ms)[0m   [0mSHOW FIELDS FROM `songs`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSong Create (0.3ms)[0m   [0mINSERT INTO `songs` (`album_id`, `created_at`, `name`, `updated_at`) VALUES(1, '2018-12-06 06:48:38', 'Lonely', '2018-12-06 06:48:38')[0m
+  [4;36;1mSQL (57.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPost Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 3) [0m
