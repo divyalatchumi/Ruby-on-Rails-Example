@@ -4891,3 +4891,39 @@ Rendering posts/new
   [4;35;1mTag Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
 Rendered posts/_forms (56.4ms)
 Completed in 98ms (View: 58, DB: 28) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2018-12-05 18:12:27) [GET]
+  [4;36;1mPost Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/posts]
+  [4;35;1mPost Load (19.6ms)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPost Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Create (39.7ms)[0m   [0;1mINSERT INTO `posts` (`updated_at`, `content`, `created_at`, `name`, `title`) VALUES('2018-12-06 05:09:53', 'This is a test for callbacks to check whether after_save callback works', '2018-12-06 05:09:53', 'Jane Doe', 'Test for callbacks')[0m
+  [4;35;1mSQL (55.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mTag Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (72.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTag Create (0.4ms)[0m   [0mINSERT INTO `tags` (`user`, `created_at`, `updated_at`, `name`, `post_id`) VALUES(NULL, '2018-12-06 05:32:10', '2018-12-06 05:32:10', 'small', NULL)[0m
+  [4;36;1mSQL (131.2ms)[0m   [0;1mCOMMIT[0m
