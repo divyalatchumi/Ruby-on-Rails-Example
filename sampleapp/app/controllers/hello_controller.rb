@@ -43,4 +43,15 @@ class HelloController < ApplicationController
     session[:current_user_id] = nil
     redirect_to :action => "login"
   end
+
+  def forms
+  end
+
+  def file_upload_status
+    uploaded_io = params[:picture]
+    File.open(Rails.root.join('public', 'uploads', 'sample.jpg'), 'w') do |file|
+      file.write(uploaded_io.read)
+      @message = "Downloaded"
+    end
+  end
 end

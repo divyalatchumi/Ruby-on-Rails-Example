@@ -1,6 +1,7 @@
 <% form_for @login,  :url =>{ :action => :create}, :method => "post" do |f| %>
   <%# if f.error_messages %>
-  <%= f.error_messages %>
+  <%= f.error_messages :header_message => "Invalid Entries", 
+  :message => "Fix the following details", :header_tag => "h3"%>
   <%# end%>
   <p>
     <%= f.label :username %>
@@ -10,6 +11,10 @@
     <%= f.label :email %>
     <%= f.text_field :email %>
   </p>
+  <p><%= radio_button_tag(:gender, "male") %>
+  <%= label_tag(:gender_male, "Male") %>
+  <%= radio_button_tag(:gender, "female") %>
+  <%= label_tag(:gender_female, "Female") %></p>
   <p>
     <%= f.label :password, "Password" %>
     <%= f.password_field :password%>

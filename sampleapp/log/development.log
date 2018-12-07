@@ -17582,3 +17582,764 @@ Completed in 261ms (DB: 251) | 302 Found [http://localhost/logins/create]
 Processing HelloController#login (for 127.0.0.1 at 2018-12-07 12:47:17) [GET]
 Rendering hello/login
 Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/hello/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#login (for 127.0.0.1 at 2018-12-07 14:49:01) [GET]
+Rendering hello/login
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/hello/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-07 14:49:09) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "commit"=>"Register", "login"=>{"password"=>"a", "email"=>"alice@gmail.com", "password_confirmation"=>"a", "username"=>"alicebob"}}
+  [4;36;1mLogin Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLogin Load (0.4ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY 'alicebob') LIMIT 1[0m
+  [4;35;1mLogin Load (0.5ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY 'alice@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+Rendering logins/new
+Completed in 73ms (View: 63, DB: 2) | 200 OK [http://localhost/logins/create]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#index (for 127.0.0.1 at 2018-12-07 14:57:41) [GET]
+Redirected to http://localhost:3000/logins/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/logins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2018-12-07 14:57:41) [GET]
+  [4;35;1mLogin Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendering logins/new
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/logins/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#login (for 127.0.0.1 at 2018-12-07 14:57:49) [GET]
+Rendering hello/login
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://localhost/hello/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#index (for 127.0.0.1 at 2018-12-07 15:26:00) [GET]
+Redirected to http://localhost:3000/logins/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/logins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2018-12-07 15:26:00) [GET]
+  [4;36;1mLogin Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering logins/new
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/logins/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2018-12-07 15:26:09) [GET]
+  [4;35;1mLogin Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendering logins/new
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://localhost/logins/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-07 15:26:13) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "commit"=>"Register", "gender"=>"male", "login"=>{"password"=>"", "email"=>"", "password_confirmation"=>"", "username"=>""}}
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLogin Load (22.4ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY '') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY '') LIMIT 1[0m
+  [4;36;1mSQL (8.1ms)[0m   [0;1mROLLBACK[0m
+Rendering logins/new
+Completed in 56ms (View: 16, DB: 32) | 200 OK [http://localhost/logins/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-07 15:52:24) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "commit"=>"Register", "gender"=>"male", "login"=>{"password"=>"", "email"=>"", "password_confirmation"=>"", "username"=>""}}
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY '') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (26.4ms)[0m   [0mROLLBACK[0m
+Rendering logins/new
+
+ActionView::TemplateError (undefined method `day' for :DOB:Symbol) on line #23 of app/views/logins/new.html.erb:
+20:     <%= f.password_field :password%>
+21:     <%= f.password_field :password_confirmation %>
+22:   </p>
+23:   <p><%= select_date(:DOB, "Date of Birth") %></p>
+24:   <p>
+25:     <%= f.submit "Register" %>
+26:   </p>
+
+    app/views/logins/new.html.erb:23
+    app/views/logins/new.html.erb:1
+    app/controllers/logins_controller.rb:21:in `create'
+    app/controllers/logins_controller.rb:16:in `create'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-07 15:52:48) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "commit"=>"Register", "gender"=>"male", "login"=>{"password"=>"", "email"=>"", "password_confirmation"=>"", "username"=>""}}
+  [4;36;1mLogin Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY '') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY '') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering logins/new
+
+ActionView::TemplateError (undefined method `day' for :dob:Symbol) on line #23 of app/views/logins/new.html.erb:
+20:     <%= f.password_field :password%>
+21:     <%= f.password_field :password_confirmation %>
+22:   </p>
+23:   <p><%= select_date(:dob, "Date of Birth") %></p>
+24:   <p>
+25:     <%= f.submit "Register" %>
+26:   </p>
+
+    app/views/logins/new.html.erb:23
+    app/views/logins/new.html.erb:1
+    app/controllers/logins_controller.rb:21:in `create'
+    app/controllers/logins_controller.rb:16:in `create'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-07 15:53:44) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "commit"=>"Register", "gender"=>"male", "login"=>{"password"=>"", "email"=>"", "password_confirmation"=>"", "username"=>""}}
+  [4;35;1mLogin Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY '') LIMIT 1[0m
+  [4;36;1mLogin Load (0.5ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering logins/new
+ERROR: compiling _run_erb_app47views47logins47new46html46erb RAISED compile error
+/home/infibeam/Desktop/sample_project/sampleapp/app/views/logins/new.html.erb:23: syntax error, unexpected ')', expecting kEND
+...:dob, "Date of Birth") ).to_s); @output_buffer.concat "</p>\...
+                              ^
+Function body:           def _run_erb_app47views47logins47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  form_for @login,  :url =>{ :action => :create}, :method => "post" do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages :header_message => "Invalid Entries", 
+  :message => "Fix the following details", :header_tag => "h3").to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat "\n  <p>\n    "
+
+; @output_buffer.concat(( f.label :username ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :username ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :email ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "\n  </p>\n  <p>"
+
+; @output_buffer.concat(( radio_button_tag(:gender, "male") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:gender_male, "Male") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( radio_button_tag(:gender, "female") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:gender_female, "Female") ).to_s); @output_buffer.concat "</p>\n  <p>\n    "
+
+; @output_buffer.concat(( f.label :password, "Password" ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.password_field :password).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.password_field :password_confirmation ).to_s); @output_buffer.concat "\n  </p>\n  <p>"
+
+; @output_buffer.concat(( select_date DateTime.today, :dob, "Date of Birth") ).to_s); @output_buffer.concat "</p>\n  <p>\n    "
+
+; @output_buffer.concat(( f.submit "Register" ).to_s); @output_buffer.concat "\n  </p>\n  "
+
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/infibeam/Desktop/sample_project/sampleapp/app/views/logins/new.html.erb:30:in `compile!'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/logins_controller.rb:21:in `create'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/logins_controller.rb:16:in `create'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/lock.rb:11:in `synchronize'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/handler/webrick.rb:14:in `run'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/infibeam/Desktop/sample_project/sampleapp/app/views/logins/new.html.erb:23: syntax error, unexpected ')', expecting kEND
+...:dob, "Date of Birth") ).to_s); @output_buffer.concat "</p>\...
+                              ^) on line #23 of app/views/logins/new.html.erb:
+20:     <%= f.password_field :password%>
+21:     <%= f.password_field :password_confirmation %>
+22:   </p>
+23:   <p><%= select_date DateTime.today, :dob, "Date of Birth") %></p>
+24:   <p>
+25:     <%= f.submit "Register" %>
+26:   </p>
+
+    app/views/logins/new.html.erb:30:in `compile!'
+    app/controllers/logins_controller.rb:21:in `create'
+    app/controllers/logins_controller.rb:16:in `create'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.8ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-07 15:53:54) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "commit"=>"Register", "gender"=>"male", "login"=>{"password"=>"", "email"=>"", "password_confirmation"=>"", "username"=>""}}
+  [4;36;1mLogin Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY '') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY '') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering logins/new
+
+ActionView::TemplateError (private method `today' called for DateTime:Class) on line #23 of app/views/logins/new.html.erb:
+20:     <%= f.password_field :password%>
+21:     <%= f.password_field :password_confirmation %>
+22:   </p>
+23:   <p><%= select_date DateTime.today, :dob, "Date of Birth" %></p>
+24:   <p>
+25:     <%= f.submit "Register" %>
+26:   </p>
+
+    app/views/logins/new.html.erb:23
+    app/views/logins/new.html.erb:1
+    app/controllers/logins_controller.rb:21:in `create'
+    app/controllers/logins_controller.rb:16:in `create'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-07 15:55:01) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "commit"=>"Register", "gender"=>"male", "login"=>{"password"=>"", "email"=>"", "password_confirmation"=>"", "username"=>""}}
+  [4;35;1mLogin Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY '') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering logins/new
+
+ActionView::TemplateError (private method `today' called for DateTime:Class) on line #23 of app/views/logins/new.html.erb:
+20:     <%= f.password_field :password%>
+21:     <%= f.password_field :password_confirmation %>
+22:   </p>
+23:   <p><%= select_date DateTime.today %></p>
+24:   <p>
+25:     <%= f.submit "Register" %>
+26:   </p>
+
+    app/views/logins/new.html.erb:23
+    app/views/logins/new.html.erb:1
+    app/controllers/logins_controller.rb:21:in `create'
+    app/controllers/logins_controller.rb:16:in `create'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (92.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-07 15:55:31) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "commit"=>"Register", "gender"=>"male", "login"=>{"password"=>"", "email"=>"", "password_confirmation"=>"", "username"=>""}}
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY '') LIMIT 1[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY '') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+Rendering logins/new
+Completed in 37ms (View: 26, DB: 2) | 200 OK [http://localhost/logins/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-07 16:02:44) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "commit"=>"Register", "gender"=>"male", "login"=>{"password"=>"", "email"=>"", "password_confirmation"=>"", "username"=>""}}
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLogin Load (0.4ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY '') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering logins/new
+Completed in 87ms (View: 25, DB: 2) | 200 OK [http://localhost/logins/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#index (for 127.0.0.1 at 2018-12-07 16:02:50) [GET]
+Redirected to http://localhost:3000/logins/new
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/logins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2018-12-07 16:02:50) [GET]
+  [4;36;1mLogin Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering logins/new
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/logins/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 16:20:07) [GET]
+
+NoMethodError (undefined method `original_filename' for nil:NilClass):
+  app/controllers/hello_controller.rb:49:in `forms'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 16:21:27) [GET]
+Rendering hello/forms
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 16:22:31) [GET]
+Rendering hello/forms
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#file_upload_status (for 127.0.0.1 at 2018-12-07 16:22:35) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>"maxresdefault.jpg", "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}}
+
+NoMethodError (undefined method `original_filename' for "maxresdefault.jpg":String):
+  app/controllers/hello_controller.rb:52:in `file_upload_status'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (22.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#file_upload_status (for 127.0.0.1 at 2018-12-07 16:24:26) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>"maxresdefault.jpg", "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}}
+
+Errno::ENOENT (No such file or directory - /home/infibeam/Desktop/sample_project/sampleapp/public/uploads/sample.jpg):
+  app/controllers/hello_controller.rb:52:in `initialize'
+  app/controllers/hello_controller.rb:52:in `open'
+  app/controllers/hello_controller.rb:52:in `file_upload_status'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.1ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#file_upload_status (for 127.0.0.1 at 2018-12-07 16:25:04) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>"maxresdefault.jpg", "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}}
+
+NoMethodError (undefined method `read' for "maxresdefault.jpg":String):
+  app/controllers/hello_controller.rb:53:in `file_upload_status'
+  app/controllers/hello_controller.rb:52:in `open'
+  app/controllers/hello_controller.rb:52:in `file_upload_status'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#file_upload_status (for 127.0.0.1 at 2018-12-07 16:25:35) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>"maxresdefault.jpg", "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}}
+
+NoMethodError (undefined method `read' for "maxresdefault.jpg":String):
+  app/controllers/hello_controller.rb:53:in `file_upload_status'
+  app/controllers/hello_controller.rb:52:in `open'
+  app/controllers/hello_controller.rb:52:in `file_upload_status'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (71.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#file_upload_status (for 127.0.0.1 at 2018-12-07 16:26:40) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>"maxresdefault.jpg", "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}}
+
+NoMethodError (undefined method `read' for "maxresdefault.jpg":String):
+  app/controllers/hello_controller.rb:53:in `file_upload_status'
+  app/controllers/hello_controller.rb:52:in `open'
+  app/controllers/hello_controller.rb:52:in `file_upload_status'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (23.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 16:26:51) [GET]
+Rendering hello/forms
+Completed in 54ms (View: 12, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#file_upload_status (for 127.0.0.1 at 2018-12-07 16:27:16) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>"maxresdefault.jpg", "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}}
+
+NoMethodError (undefined method `read' for "maxresdefault.jpg":String):
+  app/controllers/hello_controller.rb:53:in `file_upload_status'
+  app/controllers/hello_controller.rb:52:in `open'
+  app/controllers/hello_controller.rb:52:in `file_upload_status'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 16:28:05) [GET]
+Rendering hello/forms
+ERROR: compiling _run_erb_app47views47hello47forms46html46erb RAISED compile error
+/home/infibeam/Desktop/sample_project/sampleapp/app/views/hello/forms.html.erb:1: syntax error, unexpected ',', expecting kEND
+...tion => "file_upload_status"), :multipart => true do; @outpu...
+                              ^
+/home/infibeam/Desktop/sample_project/sampleapp/app/views/hello/forms.html.erb:6: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47hello47forms46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  form_tag (:action => "file_upload_status"), :multipart => true do; @output_buffer.concat "\n  <p>"
+; @output_buffer.concat(( select_date ).to_s); @output_buffer.concat "</p>\n  <p>"
+; @output_buffer.concat(( file_field_tag 'picture').to_s); @output_buffer.concat "</p>\n  <p>"
+; @output_buffer.concat(( submit_tag 'Upload').to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/infibeam/Desktop/sample_project/sampleapp/app/views/hello/forms.html.erb:6:in `compile!'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/lock.rb:11:in `synchronize'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/handler/webrick.rb:14:in `run'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/infibeam/Desktop/sample_project/sampleapp/app/views/hello/forms.html.erb:1: syntax error, unexpected ',', expecting kEND
+...tion => "file_upload_status"), :multipart => true do; @outpu...
+                              ^
+/home/infibeam/Desktop/sample_project/sampleapp/app/views/hello/forms.html.erb:6: syntax error, unexpected kENSURE, expecting $end) on line #1 of app/views/hello/forms.html.erb:
+1: <% form_tag (:action => "file_upload_status"), :multipart => true do%>
+2:   <p><%= select_date %></p>
+3:   <p><%= file_field_tag 'picture'%></p>
+4:   <p><%= submit_tag 'Upload'%></p>
+
+    app/views/hello/forms.html.erb:6:in `compile!'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 16:28:33) [GET]
+Rendering hello/forms
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#file_upload_status (for 127.0.0.1 at 2018-12-07 16:28:39) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>#<File:/tmp/RackMultipart20181207-30786-hcanul-0>, "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}}
+Rendering hello/file_upload_status
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/hello/file_upload_status]
