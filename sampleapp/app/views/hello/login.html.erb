@@ -1,6 +1,8 @@
 <%#The following to syntax for for means the same%>
 <%#<% form_tag(hello_index_path, :method => "get") do %>
-
+ <% if flash[:notice] -%>
+	<p class="notice"><%= flash[:notice] %></p>
+<% end -%>
 <% form_tag(:controller => 'hello', :action => 'index')  do %>
  <p><%= label_tag(:username, "Username") %>
   <%= text_field_tag(:username) %></p>
