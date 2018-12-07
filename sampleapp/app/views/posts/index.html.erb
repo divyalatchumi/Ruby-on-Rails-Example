@@ -22,3 +22,6 @@
 <br />
 
 <%= link_to 'New post', new_post_path %>
+<% if flash[:notice] -%>
+  <p class="notice"><%= flash[:notice] %></p>
+<% end -%>

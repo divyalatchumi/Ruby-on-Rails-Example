@@ -1,2 +1,10 @@
 <h1>Hello World</h1>
 <p><%= @message %></p>
+<% if flash[:notice] -%>
+	<p class="notice"><%= flash[:notice] %></p>
+<% end -%>
+<%#To print an array%>
+<%#<% @login.each do |element| %>
+<%#  <li><%= element.username %>
+<%#<% end %>
+<%= link_to "Logout", {:action => :logout} %>

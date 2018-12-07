@@ -43,8 +43,9 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
-  map.resources  :login
-  map.get '/logins/create', :controller => 'logins', :action => 'create', :as => :create_login
+  #map.resources  :login
   #map.root :controller => "home"
-  map.connect "/hello/index/:status", :controller => "hello", :foo => "1"
+  #map.connect "/hello/index/:status", :controller => "hello", :foo => "1"
+  map.resources :hello
+  map.match "/hello/login", :controller => "hello", :action => "login"
 end
