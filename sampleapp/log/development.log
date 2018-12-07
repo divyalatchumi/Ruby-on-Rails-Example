@@ -18343,3 +18343,1135 @@ Processing HelloController#file_upload_status (for 127.0.0.1 at 2018-12-07 16:28
   Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>#<File:/tmp/RackMultipart20181207-30786-hcanul-0>, "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}}
 Rendering hello/file_upload_status
 Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/hello/file_upload_status]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#file_upload_status (for 127.0.0.1 at 2018-12-07 17:07:24) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>#<File:/tmp/RackMultipart20181207-30786-1tkck6x-0>, "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}}
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://localhost/hello/file_upload_status]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:07:27) [GET]
+Rendering hello/forms
+Completed in 10ms (View: 8, DB: 3) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:07:30) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>"maxresdefault.jpg", "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}, "multipart"=>"true"}
+Rendering hello/forms
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/hello/forms?multipart=true]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:07:35) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>"", "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}, "multipart"=>"true"}
+Rendering hello/forms
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/hello/forms?multipart=true]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:07:36) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>"", "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}, "multipart"=>"true"}
+Rendering hello/forms
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/hello/forms?multipart=true]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:07:53) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "picture"=>"", "commit"=>"Upload", "date"=>{"day"=>"7", "month"=>"12", "year"=>"2018"}, "multipart"=>"true"}
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/hello/forms?multipart=true]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:08:36) [GET]
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:15:02) [GET]
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:15:14) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#forms (for 127.0.0.1 at 2018-12-07 17:17:23) [GET]
+
+SyntaxError (/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/hello_controller.rb:48: syntax error, unexpected '='
+    =begin
+     ^
+/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/hello_controller.rb:53: syntax error, unexpected '=', expecting kEND
+    =end
+     ^
+/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/hello_controller.rb:64: syntax error, unexpected $end, expecting kEND):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (67.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#forms (for 127.0.0.1 at 2018-12-07 17:18:43) [GET]
+
+SyntaxError (/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/hello_controller.rb:48: syntax error, unexpected '='
+    =begin
+     ^
+/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/hello_controller.rb:53: syntax error, unexpected '=', expecting kEND
+    =end
+     ^
+/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/hello_controller.rb:65: syntax error, unexpected $end, expecting kEND):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#forms (for 127.0.0.1 at 2018-12-07 17:18:44) [GET]
+
+SyntaxError (/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/hello_controller.rb:48: syntax error, unexpected '='
+    =begin
+     ^
+/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/hello_controller.rb:53: syntax error, unexpected '=', expecting kEND
+    =end
+     ^
+/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/hello_controller.rb:65: syntax error, unexpected $end, expecting kEND):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#forms (for 127.0.0.1 at 2018-12-07 17:18:44) [GET]
+
+SyntaxError (/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/hello_controller.rb:48: syntax error, unexpected '='
+    =begin
+     ^
+/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/hello_controller.rb:53: syntax error, unexpected '=', expecting kEND
+    =end
+     ^
+/home/infibeam/Desktop/sample_project/sampleapp/app/controllers/hello_controller.rb:65: syntax error, unexpected $end, expecting kEND):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (71.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:19:39) [GET]
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:19:48) [GET]
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:21:23) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` LIMIT 1[0m
+  [4;36;1mLogin Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:21:29) [GET]
+  [4;35;1mLogin Load (0.4ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Completed in 12ms (View: 6, DB: 2) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:22:12) [GET]
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:22:21) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:22:21) [GET]
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:22:22) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:22:22) [GET]
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:22:22) [GET]
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:22:22) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:23:57) [GET]
+Rendering hello/forms (500)
+Completed in 8ms (View: 7, DB: 0) | 500 Internal Server Error [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:24:08) [GET]
+Rendering hello/forms (300)
+Completed in 9ms (View: 8, DB: 0) | 300 Multiple Choices [http://localhost/hello/forms]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:24:09) [GET]
+Rendering hello/forms (300)
+Completed in 10ms (View: 8, DB: 0) | 300 Multiple Choices [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:24:09) [GET]
+Rendering hello/forms (300)
+Completed in 10ms (View: 8, DB: 0) | 300 Multiple Choices [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:24:42) [GET]
+Rendering hello/forms (300)
+Completed in 8ms (View: 6, DB: 0) | 300 Multiple Choices [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:24:55) [GET]
+Rendering hello/forms (300)
+Rendering hello/forms
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:24:56) [GET]
+Rendering hello/forms (300)
+Rendering hello/forms
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:24:56) [GET]
+Rendering hello/forms (300)
+Rendering hello/forms
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:39:55) [GET]
+Rendering hello/forms (300)
+Rendering template within layouts/posts
+Rendering hello/forms
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/hello/forms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#forms (for 127.0.0.1 at 2018-12-07 17:51:37) [GET]
+
+ActionController::RedirectBackError (No HTTP_REFERER was set in the request to this action, so redirect_to :back could not be called successfully. If this is a test, make sure to specify request.env["HTTP_REFERER"].):
+  app/controllers/hello_controller.rb:64:in `forms'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-07 17:52:13) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:52:15) [GET]
+Redirected to http://localhost:3000/home
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/hello_controller.rb:11:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-07 17:54:09) [GET]
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:54:09) [GET]
+Redirected to http://localhost:3000/hello/login
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#login (for 127.0.0.1 at 2018-12-07 17:54:10) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/hello/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:54:13) [GET]
+Redirected to http://localhost:3000/hello/login
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#login (for 127.0.0.1 at 2018-12-07 17:54:13) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/hello/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:54:22) [GET]
+Redirected to http://localhost:3000/hello/login
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/hello/index]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#login (for 127.0.0.1 at 2018-12-07 17:54:22) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/hello/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:54:35) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "password"=>"divya", "commit"=>"Login", "username"=>"divya"}
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (username ='divya') LIMIT 1[0m
+  [4;36;1mLogin Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/posts
+Rendering hello/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:54:45) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "password"=>"divya", "commit"=>"Login", "username"=>"divya"}
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering hello/index
+ERROR: compiling _run_erb_app47views47hello47index46html46erb RAISED compile error
+/home/infibeam/Desktop/sample_project/sampleapp/app/views/hello/index.html.erb:11: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+...link_to "Back", {redirect_to :back} ).to_s); @output_buffer....
+                              ^
+Function body:           def _run_erb_app47views47hello47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Hello World</h1>\n<p>"
+; @output_buffer.concat(( @message ).to_s); @output_buffer.concat "</p>\n"
+;  if flash[:notice] 
+@output_buffer.concat "\t<p class=\"notice\">"; @output_buffer.concat(( flash[:notice] ).to_s); @output_buffer.concat "</p>\n"
+;  end 
+@output_buffer.concat "\n"
+; @output_buffer.concat "\n"
+; @output_buffer.concat "\n"
+; @output_buffer.concat "\n"
+; @output_buffer.concat(( link_to "Logout", {:action => :logout} ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( link_to "Back", {redirect_to :back} ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/infibeam/Desktop/sample_project/sampleapp/app/views/hello/index.html.erb:15:in `compile!'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/lock.rb:11:in `synchronize'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rack-1.1.6/lib/rack/handler/webrick.rb:14:in `run'
+/home/infibeam/.rvm/gems/ruby-1.8.7-head/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/infibeam/Desktop/sample_project/sampleapp/app/views/hello/index.html.erb:11: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+...link_to "Back", {redirect_to :back} ).to_s); @output_buffer....
+                              ^) on line #11 of app/views/hello/index.html.erb:
+8: <%#  <li><%= element.username %>
+9: <%#<% end %>
+10: <%= link_to "Logout", {:action => :logout} %>
+11: <%= link_to "Back", {redirect_to :back} %>
+
+    app/views/hello/index.html.erb:15:in `compile!'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:54:57) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "password"=>"divya", "commit"=>"Login", "username"=>"divya"}
+  [4;35;1mLogin Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering hello/index
+Completed in 13ms (View: 5, DB: 2) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:54:58) [GET]
+  Parameters: {"redirect_to"=>"back"}
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering hello/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/hello?redirect_to=back]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:55:48) [GET]
+Redirected to http://localhost:3000/hello/login
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/hello/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#login (for 127.0.0.1 at 2018-12-07 17:55:48) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/hello/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-07 17:55:51) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:55:53) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:01) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "password"=>"divya", "commit"=>"Login", "username"=>"divya"}
+  [4;35;1mLogin Load (0.4ms)[0m   [0mSELECT * FROM `logins` WHERE (username ='divya') LIMIT 1[0m
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/posts
+Rendering hello/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:22) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "password"=>"divya", "commit"=>"Login", "username"=>"divya"}
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:22) [GET]
+  [4;35;1mLogin Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (1.7ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 9ms (DB: 2) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:22) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:22) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:22) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 7ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 5ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:23) [GET]
+  [4;35;1mLogin Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Redirected to http://localhost:3000/hello
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/hello]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:57) [GET]
+  [4;35;1mLogin Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mLogin Load (1.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering hello/index
+Completed in 64ms (View: 1, DB: 3) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:56:58) [GET]
+Redirected to http://localhost:3000/hello
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/hello/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:56:58) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:57:06) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "password"=>"divya", "commit"=>"Login", "username"=>"divya"}
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (username ='divya') LIMIT 1[0m
+  [4;36;1mLogin Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/posts
+Rendering hello/index
+Completed in 51ms (View: 1, DB: 1) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:57:07) [GET]
+Redirected to http://localhost:3000/hello
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/hello/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:57:07) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-07 17:57:18) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:57:20) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:57:26) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "password"=>"d", "commit"=>"Login", "username"=>"divya"}
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (username ='divya') LIMIT 1[0m
+  [4;36;1mLogin Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:57:30) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "password"=>"divya", "commit"=>"Login", "username"=>"divya"}
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (username ='divya') LIMIT 1[0m
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/posts
+Rendering hello/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:57:39) [GET]
+
+ActionView::MissingTemplate (Missing template hello/logout.erb in view path app/views):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:57:45) [GET]
+Redirected to http://localhost:3000/hello
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/hello/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:57:45) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 17:59:08) [POST]
+  Parameters: {"authenticity_token"=>"Y4IMxMiPLbXnd3RDUsl/p9I5teOcJQsc878THEo5PY0=", "password"=>"divya", "commit"=>"Login", "username"=>"divya"}
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (username ='divya') LIMIT 1[0m
+  [4;36;1mLogin Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/posts
+Rendering hello/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:59:10) [GET]
+Completed in 2ms (View: 0, DB: 0) | 400 Bad Request [http://localhost/hello/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:59:11) [GET]
+Completed in 2ms (View: 1, DB: 0) | 400 Bad Request [http://localhost/hello/logout]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:59:12) [GET]
+Completed in 2ms (View: 0, DB: 1) | 400 Bad Request [http://localhost/hello/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:59:32) [GET]
+
+NoMethodError (undefined method `render_strin_string' for #<HelloController:0x7f68236e6058>):
+  app/controllers/hello_controller.rb:50:in `logout'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:59:38) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+
+ActionView::MissingTemplate (Missing template hello/logout.erb in view path app/views):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:59:42) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+
+ActionView::MissingTemplate (Missing template hello/logout.erb in view path app/views):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:59:58) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+
+ActionView::MissingTemplate (Missing template hello/logout.erb in view path app/views):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:59:58) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+
+ActionView::MissingTemplate (Missing template hello/logout.erb in view path app/views):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:59:59) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+
+ActionView::MissingTemplate (Missing template hello/logout.erb in view path app/views):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 17:59:59) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+
+ActionView::MissingTemplate (Missing template hello/logout.erb in view path app/views):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 18:00:01) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+
+ActionView::MissingTemplate (Missing template hello/logout.erb in view path app/views):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-07 18:00:08) [GET]
+Redirected to http://localhost:3000/hello
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/hello/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-07 18:00:08) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/hello]

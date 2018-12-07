@@ -1,4 +1,5 @@
 class HelloController < ApplicationController
+  layout "posts"
   def index
     @message = " "
     @username = params[:username]
@@ -6,7 +7,7 @@ class HelloController < ApplicationController
     if session[:current_user_id] ==nil
       if @username.nil? || @username.empty? || @password.nil? || @password.empty?
         flash[:error] = "Username and/or password cannot be empty"
-        redirect_to :action => "login"
+        render "login"
       else
         if @userId = Login.first(:conditions => "username ='"+ @username+"'")
         #@userId = Login.find(:username => @username)
@@ -15,7 +16,7 @@ class HelloController < ApplicationController
             session[:current_user_id] = @userId.id
           else
             flash[:error] = "Incorrect username or password"
-            redirect_to :action => "login"
+            render "login"
           end
         else
           flash[:error] = "Incorrect username or password"
@@ -31,6 +32,7 @@ class HelloController < ApplicationController
   	else
   		@message += "<br>No status provided"
     end
+
   end
 
   def login
@@ -41,10 +43,30 @@ class HelloController < ApplicationController
 
   def logout
     session[:current_user_id] = nil
-    redirect_to :action => "login"
+    #redirect_to :action => "login"
+
+    redirect_to :back
+
+    #render_to_string :action => "login"
   end
 
   def forms
+    
+    #render :nothing =>true
+    #render :update do |page|
+    #  page.replace_html 'warning', "Invalid options supplied"
+    #end
+
+    #render :text => "Render test test"
+
+    #@login = Login.all
+    #render :json => @login
+
+    #render :js => "alert('Hello Rails');"
+
+    #render_to_string :status => 300
+
+
   end
 
   def file_upload_status
@@ -52,6 +74,7 @@ class HelloController < ApplicationController
     File.open(Rails.root.join('public', 'uploads', 'sample.jpg'), 'w') do |file|
       file.write(uploaded_io.read)
       @message = "Downloaded"
+
     end
   end
 end
