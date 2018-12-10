@@ -1,0 +1,48 @@
+#Download git and copy the ruby on rails repository
+sudo apt-get install git
+git config --global user.name "Divyalatchumi Nakkeerar"
+git config --global user.email "divyalatchumi@gmail.com"
+git config --global color.ui auto
+ssh-keygen -t rsa -C "divyalatchumi@gmail.com"
+cat ~/.ssh/id_rsa.pub
+git clone "git link"
+
+#Setting up environment for Ruby on Rails
+sudo apt-get update
+sudo apt-get install rvm
+rvm install 1.8.7
+gem install rails --version 2.3.8
+gem update --system 1.5.3
+
+#Correct the version of rake
+gem install rake --version 0.8.7
+gem uninstall rake --version 10.1.1
+
+#In case rake is global
+rvm use @global && gem uninstall rake
+rvm use @global && gem install rake --version 0.8.7
+
+#Install mysql
+sudo apt-get install libmysqlclient-dev
+gem install mysql
+
+#output of gem list
+*** LOCAL GEMS ***
+
+actionmailer (2.3.8)
+actionpack (2.3.8)
+activerecord (2.3.8)
+activeresource (2.3.8)
+activesupport (2.3.8)
+bundler (1.17.1, 0.9.25)
+bundler-unload (1.0.2)
+executable-hooks (1.6.0)
+gem-wrappers (1.4.0)
+mysql (2.9.1)
+rack (1.1.6)
+rails (2.3.8)
+rake (0.8.7)
+rubygems-bundler (1.4.5)
+rubygems-update (1.5.3)
+rvm (1.11.3.9)
+divyalatchumi@di

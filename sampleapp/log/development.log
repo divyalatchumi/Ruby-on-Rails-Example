@@ -19475,3 +19475,413 @@ Processing HelloController#index (for 127.0.0.1 at 2018-12-07 18:00:08) [GET]
 Rendering template within layouts/posts
 Rendering hello/login
 Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/hello]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (32.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCREATE TABLE `posts` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `title` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181204075002')[0m
+Migrating to CreateComments (20181205062756)
+  [4;36;1mSQL (30.3ms)[0m   [0;1mCREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `commenter` varchar(255), `body` text, `post_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (5.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205062756')[0m
+Migrating to CreateTags (20181205065417)
+  [4;36;1mSQL (31.6ms)[0m   [0;1mCREATE TABLE `tags` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `post_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205065417')[0m
+Migrating to SampleTableWithoutId (20181205075131)
+  [4;36;1mSQL (31.1ms)[0m   [0;1mCREATE TABLE `sampleTableWithoutId` (`name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205075131')[0m
+Migrating to AddUserToTags (20181205100330)
+  [4;36;1mSQL (55.6ms)[0m   [0;1mALTER TABLE `tags` ADD `user` varchar(255)[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181205100330')[0m
+Migrating to CreateArtists (20181206060411)
+  [4;36;1mSQL (30.8ms)[0m   [0;1mCREATE TABLE `artists` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (5.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181206060411')[0m
+Migrating to CreateGenres (20181206060435)
+  [4;36;1mSQL (32.1ms)[0m   [0;1mCREATE TABLE `genres` (`id` int(11) auto_increment PRIMARY KEY, `genre` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181206060435')[0m
+Migrating to CreateAlbums (20181206060533)
+  [4;36;1mSQL (31.5ms)[0m   [0;1mCREATE TABLE `albums` (`id` int(11) auto_increment PRIMARY KEY, `albumname` varchar(255), `artist_id` int(11), `genre_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181206060533')[0m
+Migrating to CreateSongs (20181206061129)
+  [4;36;1mSQL (30.1ms)[0m   [0;1mCREATE TABLE `songs` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `album_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181206061129')[0m
+Migrating to CreateLogins (20181207050538)
+  [4;36;1mSQL (32.5ms)[0m   [0;1mCREATE TABLE `logins` (`id` int(11) auto_increment PRIMARY KEY, `username` varchar(255), `password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181207050538')[0m
+Migrating to AddLoginIdToPosts (20181207050633)
+  [4;36;1mSQL (50.8ms)[0m   [0;1mALTER TABLE `posts` ADD `login_id` int(11)[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181207050633')[0m
+Migrating to AddEmailToLogins (20181207061721)
+  [4;36;1mSQL (52.3ms)[0m   [0;1mALTER TABLE `logins` ADD `email` varchar(255)[0m
+  [4;35;1mSQL (5.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181207061721')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `albums`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `albums`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `artists`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `artists`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `artists`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `genres`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `genres`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `genres`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `logins`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `logins`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `songs`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `songs`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2018-12-10 17:31:43) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-10 17:31:49) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/hello]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2018-12-10 17:31:56) [GET]
+
+ActionController::RoutingError (No route matches "/login" with {:method=>:get}):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#index (for 127.0.0.1 at 2018-12-10 17:31:59) [GET]
+Redirected to http://localhost:3000/logins/new
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/logins/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2018-12-10 17:32:00) [GET]
+  [4;36;1mLogin Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering logins/new
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/logins/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-10 17:32:08) [POST]
+  Parameters: {"login"=>{"password_confirmation"=>"", "username"=>"john", "password"=>"", "email"=>""}, "authenticity_token"=>"NCh7Gc3IvodBkZUZWyM3QrOKZQ2tYcBw4+wwi4UsxFs=", "commit"=>"Register"}
+  [4;35;1mLogin Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLogin Load (3.8ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY 'john') LIMIT 1[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering logins/new
+Completed in 37ms (View: 22, DB: 5) | 200 OK [http://localhost/logins/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-10 17:32:19) [POST]
+  Parameters: {"gender"=>"male", "login"=>{"password_confirmation"=>"john", "username"=>"john", "password"=>"john", "email"=>"john@gmail.com"}, "authenticity_token"=>"NCh7Gc3IvodBkZUZWyM3QrOKZQ2tYcBw4+wwi4UsxFs=", "commit"=>"Register"}
+  [4;36;1mLogin Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY 'john') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY 'john@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering logins/new
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/logins/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-10 17:32:30) [POST]
+  Parameters: {"login"=>{"password_confirmation"=>"johndoe1", "username"=>"johndoe1", "password"=>"johndoe1", "email"=>"john@gmail.com"}, "authenticity_token"=>"NCh7Gc3IvodBkZUZWyM3QrOKZQ2tYcBw4+wwi4UsxFs=", "commit"=>"Register"}
+  [4;35;1mLogin Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY 'johndoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY 'john@gmail.com') LIMIT 1[0m
+  [4;35;1mLogin Create (0.4ms)[0m   [0mINSERT INTO `logins` (`username`, `password`, `created_at`, `updated_at`, `email`) VALUES('johndoe1', 'johndoe1', '2018-12-10 12:02:30', '2018-12-10 12:02:30', 'john@gmail.com')[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/hello/login
+Completed in 18ms (DB: 8) | 302 Found [http://localhost/logins/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#login (for 127.0.0.1 at 2018-12-10 17:32:30) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/hello/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-10 17:32:40) [POST]
+  Parameters: {"username"=>"johndoe1", "password"=>"johndoe1", "authenticity_token"=>"NCh7Gc3IvodBkZUZWyM3QrOKZQ2tYcBw4+wwi4UsxFs=", "commit"=>"Login"}
+  [4;35;1mLogin Load (0.4ms)[0m   [0mSELECT * FROM `logins` WHERE (username ='johndoe1') LIMIT 1[0m
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/posts
+Rendering hello/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#logout (for 127.0.0.1 at 2018-12-10 17:32:44) [GET]
+Redirected to http://localhost:3000/hello
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/hello/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2018-12-10 17:32:44) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-10 17:32:48) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2018-12-10 17:32:51) [GET]
+  [4;35;1mPost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2018-12-10 17:32:52) [GET]
+  [4;35;1mPost Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+  [4;36;1mTag Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+Rendered posts/_forms (11.6ms)
+Completed in 26ms (View: 17, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2018-12-10 17:33:09) [POST]
+  Parameters: {"authenticity_token"=>"NCh7Gc3IvodBkZUZWyM3QrOKZQ2tYcBw4+wwi4UsxFs=", "post"=>{"tags_attributes"=>{"0"=>{"name"=>""}}, "name_confirmation"=>"john", "terms_of_service"=>"0", "name"=>"john", "content"=>"This is a sample post", "title"=>"Sample"}, "commit"=>"Save"}
+  [4;35;1mPost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/posts
+Rendering posts/new
+  [4;36;1mTag Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+Rendered posts/_forms (14.4ms)
+Completed in 74ms (View: 14, DB: 3) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2018-12-10 17:33:15) [POST]
+  Parameters: {"authenticity_token"=>"NCh7Gc3IvodBkZUZWyM3QrOKZQ2tYcBw4+wwi4UsxFs=", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"s"}}, "name_confirmation"=>"john", "terms_of_service"=>"1", "name"=>"john", "content"=>"This is a sample post", "title"=>"Sample"}, "commit"=>"Save"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mTag Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Rendered posts/_forms (13.1ms)
+Completed in 30ms (View: 14, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2018-12-10 17:33:18) [POST]
+  Parameters: {"authenticity_token"=>"NCh7Gc3IvodBkZUZWyM3QrOKZQ2tYcBw4+wwi4UsxFs=", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"small"}}, "name_confirmation"=>"john", "terms_of_service"=>"1", "name"=>"john", "content"=>"This is a sample post", "title"=>"Sample"}, "commit"=>"Save"}
+  [4;35;1mPost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mTag Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Create (0.3ms)[0m   [0;1mINSERT INTO `posts` (`login_id`, `name`, `created_at`, `title`, `content`, `updated_at`) VALUES(NULL, 'john', '2018-12-10 12:03:18', 'Sample', 'This is a sample post', '2018-12-10 12:03:18')[0m
+  [4;35;1mTag Create (0.2ms)[0m   [0mINSERT INTO `tags` (`user`, `name`, `post_id`, `created_at`, `updated_at`) VALUES(NULL, 'small', 1, '2018-12-10 12:03:18', '2018-12-10 12:03:18')[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 65ms (DB: 6) | 302 Found [http://localhost/posts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2018-12-10 17:33:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+Completed in 18ms (View: 9, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2018-12-10 17:33:20) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;36;1mPost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering comments/index
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+Completed in 19ms (View: 8, DB: 2) | 200 OK [http://localhost/posts/1/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2018-12-10 17:33:22) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;35;1mPost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mComment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Completed in 23ms (View: 8, DB: 2) | 200 OK [http://localhost/posts/1/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2018-12-10 17:33:33) [POST]
+  Parameters: {"post_id"=>"1", "authenticity_token"=>"NCh7Gc3IvodBkZUZWyM3QrOKZQ2tYcBw4+wwi4UsxFs=", "comment"=>{"commenter"=>"Jane", "body"=>"I am a commenter\r\n"}, "commit"=>"Create"}
+  [4;36;1mPost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`commenter`, `body`, `post_id`, `created_at`, `updated_at`) VALUES('Jane', 'I am a commenter\r\n', 1, '2018-12-10 12:03:33', '2018-12-10 12:03:33')[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1/comments/1
+Completed in 18ms (DB: 5) | 302 Found [http://localhost/posts/1/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2018-12-10 17:33:33) [GET]
+  Parameters: {"post_id"=>"1", "id"=>"1"}
+  [4;36;1mPost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.7ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 1 AND (`comments`.post_id = 1)) [0m
+Rendering comments/show
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/posts/1/comments/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2018-12-10 17:33:35) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;36;1mPost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering comments/index
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 15ms (View: 6, DB: 2) | 200 OK [http://localhost/posts/1/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2018-12-10 17:33:40) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-10 17:33:44) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2018-12-10 17:33:45) [GET]
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 14ms (View: 5, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2018-12-10 17:33:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 69ms (View: 62, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2018-12-10 17:33:49) [GET]
+  [4;36;1mPost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/posts]
