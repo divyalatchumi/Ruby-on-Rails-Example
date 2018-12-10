@@ -1,5 +1,4 @@
 class HelloController < ApplicationController
-  layout "posts"
   def index
     @message = " "
     @username = params[:username]
@@ -77,4 +76,6 @@ class HelloController < ApplicationController
 
     end
   end
+
+
 end

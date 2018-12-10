@@ -1,4 +1,18 @@
+<%= javascript_include_tag 'countdown' %>
+<div class="countdown">
+    <p class="timer">
+        <span id="days"></span> Day(s)
+        <span id="hours"></span> Hour(s)
+        <span id="minutes"></span> Minute(s)
+        <span id="seconds"></span> Second(s)
+    </p>
+</div>
 <h1>Hello, Rails!</h1>
 <h2>Just a sample</h2>
 <%= link_to "My Blog", posts_path %>
 <%= link_to "Hello World", hello_index_path %>
+<%= link_to "Sign Up", logins_path %>
+
+<h2>Username</h2>
+<%= render :partial => @logins %>
+<%= image_tag 'download.jpeg' ,:alt => 'Apples' , :size => "500x500" %>
