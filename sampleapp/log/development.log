@@ -20608,3 +20608,1583 @@ Rendering home/index
 Rendered logins/_login (1.8ms)
 Rendered logins/_login (0.1ms)
 Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home?status=0]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-10 18:46:53) [GET]
+  [4;35;1mLogin Load (1.1ms)[0m   [0mSELECT * FROM `logins` [0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (63.8ms)
+Rendered logins/_login (0.1ms)
+Completed in 77ms (View: 65, DB: 4) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:34:09) [GET]
+  [4;35;1mLogin Load (0.9ms)[0m   [0mSELECT * FROM `logins` [0m
+
+ArgumentError (Unknown key(s): condition):
+  app/controllers/home_controller.rb:5:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:34:30) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+
+ArgumentError (Unknown key(s): condition):
+  app/controllers/home_controller.rb:5:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:34:46) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.9ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:35:03) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.9ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:35:06) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.8ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:35:07) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.7ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:35:12) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (2.0ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:35:13) [GET]
+  [4;36;1mLogin Load (0.4ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (5.4ms)
+Completed in 15ms (View: 9, DB: 2) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:35:14) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.7ms)
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:35:14) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.8ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:35:14) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.4ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.9ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2018-12-11 10:35:16) [GET]
+  [4;36;1mPost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 55ms (View: 5, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:35:22) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.8ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:35:37) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (2.9ms)
+Completed in 21ms (View: 15, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:36:03) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.7ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (2.1ms)
+Completed in 11ms (View: 4, DB: 2) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#index (for 127.0.0.1 at 2018-12-11 10:36:07) [GET]
+Redirected to http://localhost:3000/logins/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/logins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2018-12-11 10:36:07) [GET]
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/posts
+Rendering logins/new
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/logins/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2018-12-11 10:36:25) [POST]
+  Parameters: {"commit"=>"Register", "authenticity_token"=>"NCh7Gc3IvodBkZUZWyM3QrOKZQ2tYcBw4+wwi4UsxFs=", "login"=>{"password_confirmation"=>"divyalatchumi", "password"=>"divyalatchumi", "username"=>"divyalatchumi", "email"=>"divyalatchumi@gmail.com"}, "gender"=>"female"}
+  [4;36;1mLogin Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY 'divyalatchumi') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY 'divyalatchumi@gmail.com') LIMIT 1[0m
+  [4;36;1mLogin Create (0.3ms)[0m   [0;1mINSERT INTO `logins` (`updated_at`, `username`, `password`, `created_at`, `email`) VALUES('2018-12-11 05:06:25', 'divyalatchumi', 'divyalatchumi', '2018-12-11 05:06:25', 'divyalatchumi@gmail.com')[0m
+  [4;35;1mSQL (6.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/hello/login
+Completed in 80ms (DB: 9) | 302 Found [http://localhost/logins/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#login (for 127.0.0.1 at 2018-12-11 10:36:25) [GET]
+Rendering template within layouts/posts
+Rendering hello/login
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/hello/login]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:36:27) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (2.7ms)
+Completed in 13ms (View: 5, DB: 2) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:36:35) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (3.3ms)
+Completed in 12ms (View: 6, DB: 2) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:37:36) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.8ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:37:37) [GET]
+  [4;36;1mLogin Load (0.9ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.8ms)
+Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:37:37) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (2.6ms)
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:37:38) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.8ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.8ms)
+Completed in 12ms (View: 4, DB: 2) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:37:57) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.8ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:38:18) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.8ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:38:40) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (4.6ms)[0m   [0mSELECT * FROM `logins` WHERE (logins.id >= 0) ORDER BY logins.id ASC LIMIT 2[0m
+
+LocalJumpError (no block given):
+  app/controllers/home_controller.rb:7:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (75.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:40:33) [GET]
+  [4;36;1mLogin Load (0.9ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.9ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (logins.id >= 0) ORDER BY logins.id ASC LIMIT 2[0m
+
+ArgumentError (Unknown key(s): condition):
+  app/controllers/home_controller.rb:8:in `index'
+  app/controllers/home_controller.rb:7:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:40:40) [GET]
+  [4;36;1mLogin Load (0.6ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.5ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.4ms)[0m   [0mSELECT * FROM `logins` WHERE (logins.id >= 0) ORDER BY logins.id ASC LIMIT 2[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Login without an ID):
+  app/controllers/home_controller.rb:8:in `index'
+  app/controllers/home_controller.rb:7:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:40:52) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (logins.id >= 0) ORDER BY logins.id ASC LIMIT 2[0m
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+
+NoMethodError (undefined method `+' for #<Login:0x7fba99f118b8>):
+  app/controllers/home_controller.rb:8:in `index'
+  app/controllers/home_controller.rb:7:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:40:57) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (logins.id >= 0) ORDER BY logins.id ASC LIMIT 2[0m
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`id` = 1) [0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 2) [0m
+  [4;35;1mLogin Load (0.4ms)[0m   [0mSELECT * FROM `logins` WHERE (logins.id > 2) ORDER BY logins.id ASC LIMIT 2[0m
+  [4;36;1mLogin Load (0.4ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 3) [0m
+Rendering template within layouts/special
+Rendering home/index
+
+ActionView::TemplateError (Missing template home/_divyalatchumi.erb in view path app/views) on line #17 of app/views/home/index.html.erb:
+14: <%= link_to "Sign Up", logins_path %>
+15: 
+16: <h2>Username</h2>
+17: <%= render :partial  => @logins %>
+18: <%= image_tag 'download.jpeg' ,:alt => 'Apples' , :size => "500x500" %>
+
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (106.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:43:23) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (1.5ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (2.0ms)
+Rendered logins/_login (0.1ms)
+Rendered logins/_login (0.1ms)
+Completed in 12ms (View: 5, DB: 3) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:46:40) [GET]
+  [4;36;1mLogin Load (0.4ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (1.8ms)
+Rendered logins/_login (0.1ms)
+Completed in 16ms (View: 4, DB: 2) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:49:54) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.0ms)[0m   [0mMysql::Error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sampleapp_development.logins.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by: SELECT * FROM `logins` GROUP BY date(created_at)[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sampleapp_development.logins.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by: SELECT * FROM `logins`  GROUP BY date(created_at)):
+  app/controllers/home_controller.rb:9:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:51:16) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (1.6ms)[0m   [0mSELECT count(username) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (missing attribute: username) on line #1 of app/views/logins/_login.html.erb:
+1: <p>Product Name: <%= login.username %></p>
+
+    app/views/logins/_login.html.erb:1
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:51:40) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':username) FROM `logins` GROUP BY date(created_at)' at line 1: SELECT count(:username) FROM `logins` GROUP BY date(created_at)[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':username) FROM `logins`  GROUP BY date(created_at)' at line 1: SELECT count(:username) FROM `logins`  GROUP BY date(created_at)):
+  app/controllers/home_controller.rb:9:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:51:59) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT COUNT(username) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (missing attribute: username) on line #1 of app/views/logins/_login.html.erb:
+1: <p>Product Name: <%= login.username %></p>
+
+    app/views/logins/_login.html.erb:1
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:53:43) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.5ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.0ms)[0m   [0mMysql::Error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sampleapp_development.logins.created_at' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by: SELECT COUNT(username), created_at FROM `logins` GROUP BY date(created_at)[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sampleapp_development.logins.created_at' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by: SELECT COUNT(username), created_at FROM `logins`  GROUP BY date(created_at)):
+  app/controllers/home_controller.rb:9:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:54:20) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT COUNT(username), created_at FROM `logins` GROUP BY created_at[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (missing attribute: username) on line #1 of app/views/logins/_login.html.erb:
+1: <p>Product Name: <%= login.username %></p>
+
+    app/views/logins/_login.html.erb:1
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (96.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:54:42) [GET]
+  [4;35;1mLogin Load (0.8ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT COUNT(username), created_at FROM `logins` GROUP BY created_at[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (missing attribute: username) on line #1 of app/views/logins/_login.html.erb:
+1: <p>Product Name: <%= login.username %></p>
+
+    app/views/logins/_login.html.erb:1
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (90.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:54:43) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT COUNT(username), created_at FROM `logins` GROUP BY created_at[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (missing attribute: username) on line #1 of app/views/logins/_login.html.erb:
+1: <p>Product Name: <%= login.username %></p>
+
+    app/views/logins/_login.html.erb:1
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (91.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:54:44) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT COUNT(username), created_at FROM `logins` GROUP BY created_at[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (missing attribute: username) on line #1 of app/views/logins/_login.html.erb:
+1: <p>Product Name: <%= login.username %></p>
+
+    app/views/logins/_login.html.erb:1
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (91.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:54:49) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT COUNT(username), created_at FROM `logins` GROUP BY created_at[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (undefined method `create_at' for #<Login created_at: "2018-12-10 12:02:30">) on line #2 of app/views/logins/_login.html.erb:
+1: <%#<p>Username: <%= login.name %>
+2: <p>Date: <%= login.create_at %>
+3: Count of username: <%= login.count(username) %>
+
+    app/views/logins/_login.html.erb:2
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (98.0ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:55:04) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.4ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT COUNT(username), created_at FROM `logins` GROUP BY created_at[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (undefined local variable or method `username' for #<ActionView::Base:0x7fba9a0a0008>) on line #3 of app/views/logins/_login.html.erb:
+1: <%#<p>Username: <%= login.name %>
+2: <p>Date: <%= login.created_at %>
+3: Count of username: <%= login.count(username) %>
+
+    app/views/logins/_login.html.erb:3
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (100.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:55:17) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT COUNT(username), created_at FROM `logins` GROUP BY created_at[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (undefined method `count' for #<Login created_at: "2018-12-10 12:02:30">) on line #3 of app/views/logins/_login.html.erb:
+1: <%#<p>Username: <%= login.name %>
+2: <p>Date: <%= login.created_at %>
+3: Count of username: <%= login.count %>
+
+    app/views/logins/_login.html.erb:3
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (100.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:55:36) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT COUNT(username), created_at FROM `logins` GROUP BY created_at[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (undefined method `count' for #<Login created_at: "2018-12-10 12:02:30">) on line #3 of app/views/logins/_login.html.erb:
+1: <%#<p>Username: <%= login.username %>
+2: <p>Date: <%= login.created_at %>
+3: Count of username: <%= login.count() %>
+
+    app/views/logins/_login.html.erb:3
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (99.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:56:52) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT COUNT(username), created_at FROM `logins` GROUP BY created_at[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (3.6ms)
+Rendered logins/_login (1.3ms)
+Rendered logins/_login (59.0ms)
+Completed in 76ms (View: 68, DB: 2) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:57:15) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.0ms)[0m   [0;1mMysql::Error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sampleapp_development.logins.created_at' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by: SELECT COUNT(username), created_at FROM `logins` GROUP BY date(created_at)[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sampleapp_development.logins.created_at' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by: SELECT COUNT(username), created_at FROM `logins`  GROUP BY date(created_at)):
+  app/controllers/home_controller.rb:9:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:57:39) [GET]
+  [4;35;1mLogin Load (0.4ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (1.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'created_at.to_date' in 'group statement': SELECT COUNT(username), created_at FROM `logins` GROUP BY created_at.to_date[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'created_at.to_date' in 'group statement': SELECT COUNT(username), created_at FROM `logins`  GROUP BY created_at.to_date):
+  app/controllers/home_controller.rb:9:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (55.7ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:59:02) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '))' at line 1: SELECT COUNT(username), created_at FROM `logins` GROUP BY date(substring(created_at))[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '))' at line 1: SELECT COUNT(username), created_at FROM `logins`  GROUP BY date(substring(created_at))):
+  app/controllers/home_controller.rb:9:in `index'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:59:30) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT COUNT(username), date(created_at) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (2.8ms)
+Rendered logins/_login (1.1ms)
+Completed in 14ms (View: 6, DB: 2) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 10:59:48) [GET]
+  [4;36;1mLogin Load (0.4ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT COUNT(username), date(created_at) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (2.3ms)
+Rendered logins/_login (0.1ms)
+Completed in 16ms (View: 7, DB: 2) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:00:18) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT COUNT(username), date(created_at) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (3.5ms)
+Rendered logins/_login (1.0ms)
+Completed in 16ms (View: 9, DB: 2) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:00:59) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT count(username), date(created_at) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (undefined local variable or method `created_at' for #<ActionView::Base:0x7fba9a1f6358>) on line #2 of app/views/logins/_login.html.erb:
+1: <%#<p>Username: <%= login.username %>
+2: <p>Date: <%= login.date(created_at) %>
+3: Count of username: <%= login.count(username) %>
+
+    app/views/logins/_login.html.erb:2
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:02:46) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT count(username), date(created_at) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (undefined local variable or method `created_at' for #<ActionView::Base:0x7fba9a18d3f8>) on line #2 of app/views/logins/_login.html.erb:
+1: <%#<p>Username: <%= login.username %>
+2: <p>Date: <%= login.date(created_at) %>
+3: Count of username: <%= login.count(username) %></p>
+
+    app/views/logins/_login.html.erb:2
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (105.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:03:16) [GET]
+  [4;36;1mLogin Load (0.5ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (undefined local variable or method `created_at' for #<ActionView::Base:0x7fba9a111550>) on line #2 of app/views/logins/_login.html.erb:
+1: <%#<p>Username: <%= login.username %>
+2: <p>Date: <%= login.date(created_at) %>
+
+    app/views/logins/_login.html.erb:2
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (96.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:03:25) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (5.3ms)
+Rendered logins/_login (0.3ms)
+Completed in 22ms (View: 13, DB: 3) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:03:37) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (undefined local variable or method `username' for #<ActionView::Base:0x7fba99f51f58>) on line #3 of app/views/logins/_login.html.erb:
+1: <%#<p>Username: <%= login.username %>
+2: <p>Date: <%= login.created_at %>
+3: Count of username: <%= login.count(username) %></p>
+
+    app/views/logins/_login.html.erb:3
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:03:52) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (2.7ms)
+Rendered logins/_login (0.2ms)
+Completed in 15ms (View: 7, DB: 2) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:04:14) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (4.6ms)
+Rendered logins/_login (1.9ms)
+Completed in 18ms (View: 11, DB: 2) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:04:48) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT count(username), date(created_at) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (missing attribute: username) on line #3 of app/views/logins/_login.html.erb:
+1: <%#<p>Username: <%= login.username %>
+2: <p>Date: <%= login.created_at %>
+3: Count of username: <%= login.username %></p>
+4: <%= debug @logins %>
+
+    app/views/logins/_login.html.erb:3
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:04:59) [GET]
+  [4;35;1mLogin Load (0.9ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.4ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT count(username), date(created_at) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (6.5ms)
+Rendered logins/_login (1.2ms)
+Completed in 27ms (View: 13, DB: 3) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:05:13) [GET]
+  [4;36;1mLogin Load (1.0ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.6ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT count(username), date(created_at) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (undefined method `count' for #<Login >) on line #3 of app/views/logins/_login.html.erb:
+1: <%#<p>Username: <%= login.username %>
+2: <p>Date: <%= login.created_at %>
+3: Count of username: <%= login.count%></p>
+4: <%= debug @logins %>
+
+    app/views/logins/_login.html.erb:3
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (90.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:05:36) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.4ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.8ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT count(username), date(created_at) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+
+ActionView::TemplateError (undefined method `username_count' for #<Login >) on line #3 of app/views/logins/_login.html.erb:
+1: <%#<p>Username: <%= login.username %>
+2: <p>Date: <%= login.created_at %>
+3: Count of username: <%= login.username_count%></p>
+4: <%= debug @logins %>
+
+    app/views/logins/_login.html.erb:3
+    app/views/home/index.html.erb:17
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:06:41) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT count(username) as username_count, date(created_at) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (3.1ms)
+Rendered logins/_login (1.1ms)
+Completed in 14ms (View: 6, DB: 2) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:06:54) [GET]
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` [0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY username[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` LIMIT 2[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT count(username) as username_count, date(created_at) FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;35;1mLogin Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (2.5ms)
+Rendered logins/_login (0.1ms)
+Completed in 17ms (View: 7, DB: 2) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2018-12-11 11:07:10) [GET]
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` [0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'janedoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT * FROM `logins` ORDER BY logins.id DESC LIMIT 1[0m
+  [4;35;1mLogin Load (1.1ms)[0m   [0mSELECT * FROM `logins` ORDER BY username[0m
+  [4;36;1mLogin Load (0.2ms)[0m   [0;1mSELECT * FROM `logins` LIMIT 2[0m
+  [4;35;1mLogin Load (0.4ms)[0m   [0mSELECT count(username) as username_count, date(created_at) as date FROM `logins` GROUP BY date(created_at)[0m
+Rendering template within layouts/special
+Rendering home/index
+  [4;36;1mLogin Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendered logins/_login (2.3ms)
+Rendered logins/_login (0.2ms)
+Completed in 19ms (View: 8, DB: 4) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mLogin Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`id` = 2) [0m
+  [4;36;1mLogin Load (0.5ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLogin Load (2.2ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY 'janedoe2' AND `logins`.id <> 2) LIMIT 1[0m
+  [4;35;1mLogin Load (0.4ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY 'jane@gmail.com' AND `logins`.id <> 2) LIMIT 1[0m
+  [4;36;1mLogin Update (2.0ms)[0m   [0;1mUPDATE `logins` SET `username` = 'janedoe2', `updated_at` = '2018-12-11 05:43:47' WHERE `id` = 2[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLogin Load (0.5ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY 'janedoe3' AND `logins`.id <> 2) LIMIT 1[0m
+  [4;36;1mLogin Load (0.4ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY 'jane@gmail.com' AND `logins`.id <> 2) LIMIT 1[0m
+  [4;35;1mLogin Update (0.4ms)[0m   [0mUPDATE `logins` SET `username` = 'janedoe3', `updated_at` = '2018-12-11 05:43:58' WHERE `id` = 2[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20181204075002)
+Migrating to CreateComments (20181205062756)
+Migrating to CreateTags (20181205065417)
+Migrating to SampleTableWithoutId (20181205075131)
+Migrating to AddUserToTags (20181205100330)
+Migrating to CreateArtists (20181206060411)
+Migrating to CreateGenres (20181206060435)
+Migrating to CreateAlbums (20181206060533)
+Migrating to CreateSongs (20181206061129)
+Migrating to CreateLogins (20181207050538)
+Migrating to AddLoginIdToPosts (20181207050633)
+Migrating to AddEmailToLogins (20181207061721)
+Migrating to AddLockVersionToLogins (20181211054240)
+  [4;36;1mSQL (58.4ms)[0m   [0;1mALTER TABLE `logins` ADD `lock_version` int(11)[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20181211054240')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `albums`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `artists`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `artists`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `artists`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `genres`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `genres`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `genres`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `logins`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `logins`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `sampleTableWithoutId`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `sampleTableWithoutId`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `songs`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `songs`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mLogin Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`id` = 2) [0m
+  [4;36;1mLogin Load (0.6ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`id` = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mLogin Load (0.6ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY 'janedoe2' AND `logins`.id <> 2) LIMIT 1[0m
+  [4;35;1mLogin Load (0.5ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` = BINARY 'jane@gmail.com' AND `logins`.id <> 2) LIMIT 1[0m
+  [4;36;1mLogin Update with optimistic locking (0.3ms)[0m   [0;1m UPDATE `logins`
+ SET `updated_at` = '2018-12-11 05:45:26', `username` = 'janedoe2', `lock_version` = 1
+ WHERE id = 2
+ AND `lock_version` = 0
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mLogin Load (0.6ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'johndoe1') LIMIT 1[0m
+  [4;35;1mLogin Load (0.4ms)[0m   [0mSELECT * FROM `logins` WHERE (`logins`.`username` = 'johndoe1') LIMIT 1[0m
+  [4;36;1mLogin Load (0.4ms)[0m   [0;1mSELECT * FROM `logins` WHERE (`logins`.`username` = 'johndoe2') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLogin Load (0.3ms)[0m   [0;1mSELECT `logins`.id FROM `logins` WHERE (`logins`.`username` = BINARY 'johndoe2') LIMIT 1[0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mLogin Load (0.0ms)[0m   [0mMysql::Error: Unknown column 'condition.username' in 'where clause': SELECT `logins`.id FROM `logins` WHERE (`condition`.`username` = 'johndoe2') LIMIT 1[0m
+  [4;36;1mLogin Load (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'logins.condition' in 'where clause': SELECT `logins`.id FROM `logins` WHERE (`logins`.`condition` = 'username = \'johndoe2\'') LIMIT 1[0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT `logins`.id FROM `logins` WHERE (`logins`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLogin Load (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'logins.conditions' in 'where clause': SELECT `logins`.id FROM `logins` WHERE (`logins`.`conditions` = 'username = \'johndoe2\'') LIMIT 1[0m
+  [4;35;1mLogin Load (0.4ms)[0m   [0mSELECT `logins`.id FROM `logins` LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `logins` [0m
+  [4;35;1mPost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `posts` [0m
+  [4;35;1mTag Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tags` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Unknown column 'Date.now' in 'where clause': SELECT count(*) AS count_all FROM `logins` WHERE (date(created_at) < Date.now) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: FUNCTION sampleapp_development.getdate does not exist: SELECT count(*) AS count_all FROM `logins` WHERE (date(created_at) < getdate()) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Unknown column 'Time.now' in 'where clause': SELECT count(*) AS count_all FROM `logins` WHERE (date(created_at) < Time.now) [0m
