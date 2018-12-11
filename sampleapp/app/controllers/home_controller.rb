@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   layout :set_layout
   def index
+    flash[:notice] = t(:hello_world)
   	@logins = Login.all
   	@logins = Login.first(:conditions => {:username => "janedoe1"})
   	@logins = Login.last

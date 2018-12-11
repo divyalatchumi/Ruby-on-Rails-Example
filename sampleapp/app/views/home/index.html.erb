@@ -9,6 +9,9 @@
 </div>
 <h1>Hello, Rails!</h1>
 <h2>Just a sample</h2>
+<h3><%= flash[:notice] %></h3>
+<h3><%= l Time.now, :format => :short %></h3>
+
 <%= link_to "My Blog", posts_path %>
 <%= link_to "Hello World", hello_index_path %>
 <%= link_to "Sign Up", logins_path %>
