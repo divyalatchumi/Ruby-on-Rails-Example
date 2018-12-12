@@ -16,7 +16,7 @@ class LoginsController < ApplicationController
 	    respond_to do |format|
 	      if @login.save
 	      	flash[:notice] = "Registration successful"
-	        format.html { redirect_to (:controller => :hello, :action => :login) }
+	        format.html { redirect_to(:controller => :hello, :action => :login) }
 	      else
 	        format.html { render :action => "new" }
 	      end

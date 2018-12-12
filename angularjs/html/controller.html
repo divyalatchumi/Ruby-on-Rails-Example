@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Controllers</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src = "../javascript/controller.js"></script>
+</head>
+<body>
+	<div ng-app="controllerApp">
+		<p ng-controller="myController" ng-click="changeText()">{{text}}</p>
+
+		<!--FILTERS -->
+		<h2>Filters</h2>
+		<div ng-controller="myFilters">
+			<p>
+				No Filter: {{string}}<br>
+				Lowercase Filter: {{string | lowercase}}<br>
+				Uppercase Filter: {{string | uppercase}}<br>
+				Currency Filter: {{number | currency}}<br>
+				OrderBy Item Filter: 
+				<ul>
+					<li ng-repeat="x in objArray | orderBy:'item'" >{{x.id + ", "+ x.item}}</li>
+				</ul>
+				OrderBy ID Filter: 
+				<ul>
+					<li ng-repeat="x in objArray | orderBy:'id'" >{{x.id + ", "+ x.item}}</li>
+				</ul>
+				Filter Filter (enter filtering condition):
+				<input type="text" name="textPhrase" ng-model = "givenPhrase"></p>
+				<ul>
+					<li ng-repeat="x in array | filter: givenPhrase ">{{x}}</li>
+				</ul>
+			</p>
+		</div>
+
+		<!--SERVICES-->
+		<h2>Services</h2>
+		<div ng-controller='myServices'>
+			<p>Location service: {{myUrl}}</p>
+			<p>HTTP service: {{helloWorld}}</p>
+			<p>Timeout service: {{timeoutText}}</p>
+			<p>Interval service (keeps incrementing the value every second): {{intervalNumber}}</p>
+		</div>
+
+		<h2>Select Box</h2>
+		<div ng-controller="myFilters">
+			<select ng-model="selectedItem" ng-options="x.item for x in objArray"></select>
+			<p>Selected Item: {{selectedItem}}</p>
+		</div>
+	
+		<div ng-controller="MainCtrl as ctrl">
+			<b>Hero</b><br>
+			<hero-detail hero="ctrl.hero"></hero-detail>
+		</div>
+		
+	</div>
+</body>
+</html>

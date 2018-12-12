@@ -39,7 +39,10 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.xml
   def create
-    @post = Post.new(params[:post])  
+    @post = Post.new(params[:post])
+    debugger
+    logger.debug "Post should be valid: #{@post.valid?}"
+ 
     respond_to do |format|
       if @post.save
         format.html { redirect_to(@post, :notice => 'Post was successfully created.') }

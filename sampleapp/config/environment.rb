@@ -5,6 +5,7 @@ RAILS_GEM_VERSION = '2.3.8' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
+require 'bleak_house' if ENV['BLEAK_HOUSE']
 
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
@@ -37,6 +38,7 @@ Rails::Initializer.run do |config|
   config.active_record.observers = :creator_observer
   config.active_record.observers = :login_observer
   config.action_mailer.default_url_options = { :host => "example.com" }
+
   #config.middleware.clear
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.

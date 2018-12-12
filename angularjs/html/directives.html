@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Directives</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="../javascript/directives.js"></script>
+</head>
+<body>
+	<div ng-app="directivesApp" ng-init="arr=['Apples','Oranges','Pineapples']">
+		<li ng-repeat="x in arr">
+			{{x}}
+		</li>
+		<directives></directives>
+		<form name="emailForm">
+		    Email:
+		    <input type="email" name="emailAddress" ng-model="text">
+		    <!--<span ng-show="emailForm.emailAddress.$error.email">Not a valid e-mail address</span>-->
+		    {{emailForm.emailAddress.$valid}}
+		</form>
+		<!--Two way binding -->
+		<p>{{text}}</p>
+	</div>
+	<a href="controller.html">Experimenting with controllers</a>
+
+</body>
+</html>
