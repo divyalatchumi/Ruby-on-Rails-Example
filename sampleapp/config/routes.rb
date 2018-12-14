@@ -45,6 +45,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id.:format'
   map.resources  :logins
   #map.root :controller => "home"
+  #map.root :controller =>'application', :action => 'angular'
   #map.connect "/hello/index/:status", :controller => "hello", :foo => "1"
   map.resources :hello
   map.match "/hello/login", :controller => "hello", :action => "login"

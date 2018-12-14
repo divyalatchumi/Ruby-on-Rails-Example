@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SampleApp - Login</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="../javascript/login.js"></script>
+</head>
+<body>
+	<div ng-app="loginApp">
+		<welcome-note></welcome-note>
+		<form name="loginForm">
+			<input ng-model="username" name="username" type="text" placeholder="Username"/><br>
+			<input ng-model="password" name="password" type="password" placeholder="Password" /><br>
+			<input type="submit">
+		</form>
+		{{username + " " + password}}
+	</div>
+</body>
+</html>

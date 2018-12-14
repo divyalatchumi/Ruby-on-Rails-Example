@@ -36,7 +36,6 @@ Rails::Initializer.run do |config|
   # Run "rake -D time" for a list of tasks for finding time zone names.
   config.time_zone = 'UTC'
   config.active_record.observers = :creator_observer
-  config.active_record.observers = :login_observer
   config.action_mailer.default_url_options = { :host => "example.com" }
 
   #config.middleware.clear

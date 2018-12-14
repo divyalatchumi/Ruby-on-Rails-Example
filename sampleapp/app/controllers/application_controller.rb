@@ -8,7 +8,9 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
-
+  def index
+    render 'layouts/application'
+  end
   private
 
   # Finds the User with the ID stored in the session with the key
@@ -24,4 +26,5 @@ class ApplicationController < ActionController::Base
     I18n.locale = params[:locale]
     #puts "Setting locale"
   end
+  
 end

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SampleApp - Login</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<%= javascript_include_tag 'login' %>
+	<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js" %>
+</head>
+<body>
+	<div ng-app="loginApp">
+		<welcome-note></welcome-note>
+		<a href="../logins/new">Register Here</a><br><br>
+		<div ng-controller="loginController">
+			<form name="loginForm" ng-submit="loginAuth(loginDetails)">
+				<input ng-model="username" name="loginDetails.username" type="text" placeholder="Username"/><br>
+				<input ng-model="password" name="loginDetails.password" type="password" placeholder="Password" /><br>
+				<input type="submit">
+				{{username + " " + password}}
+			</form>
+			{{status}}
+		</div>
+	</div>
+</body>
+</html>
