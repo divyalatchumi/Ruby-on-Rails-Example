@@ -49,4 +49,5 @@ ActionController::Routing::Routes.draw do |map|
   #map.connect "/hello/index/:status", :controller => "hello", :foo => "1"
   map.resources :hello
   map.match "/hello/login", :controller => "hello", :action => "login"
+  map.resources :tax_assessments
 end

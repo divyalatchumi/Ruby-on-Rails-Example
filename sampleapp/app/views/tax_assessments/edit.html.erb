@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js" %>
+  <%= javascript_include_tag 'tax_assessment' %>
+</head>
+<body>
+<div ng-app="taxAssessmentApp">
+
+    <div ng-controller="editTaxAssessmentController">
+      <table call-padding="10px" cell-spacing="0">
+        <form name="TaxAssessmentForm" ng-submit="editTaxAssessment()">
+          <tr>
+            <td><label for="Itr_type">Itr-type</label></td>
+            <td>
+              <select ng-model = "taxAssessment.Itr_type" id="Itr_type">
+                <option ng-repeat="x in Itr_types" value = "{{x}}">{{x}}</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="assessment_year">Assessment Year</label></td>
+            <td>
+              <select ng-model = "taxAssessment.assessment_year" id = "assessment_year">
+                <option ng-repeat="x in assessmentYears" value = "{{x.value}}">{{x.text}}</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="ack_no">Acknowledgment Number</label></td>
+            <td><input type = "text" maxlength="15" minlength=" 15" min='000000000000001' ng-model="taxAssessment.AckNo" onkeypress="return ackNoTypeCheck(event)"></td>
+          </tr>
+          <tr>
+            <td><label for="profit">Profit</label></td>
+            <td><input type="number" id="profit" ng-model="taxAssessment.profit"></td>
+          </tr>
+          <tr>
+            <td><label for="revenue">Revenue</label></td>
+            <td><input type="number" id="revenue" ng-model="taxAssessment.revenue"></td>
+          </tr>
+          <tr>
+            <td colspan = "2"><input type="submit" value="Edit Record"></td>
+          </tr>
+        </form>
+      </table>
+      <span style="color: red">{{errorMessage}}</span>
+      {{taxAssessment}}
+    </div>
+  </div>
+  <script>
+    parseFloat(Math.round($("input.currency").val())/100).toFixed(2)
+  </script>
+</body>
+</html>

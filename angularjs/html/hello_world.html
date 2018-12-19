@@ -4,16 +4,25 @@
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 		<script src="https://unpkg.com/@uirouter/angularjs@1.0.19/release/angular-ui-router.min.js"></script>
-		<script type = "text/javascript" src="../javascript/hello_world.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../javascript/hello_world.js"></script>
 		<!--<div ng-app="myApp" ng-controller="helloWorld">
 		  <p> {{greeting + " " +desc}} </p>
 		</div>-->
 		<div ng-app="myApp">
-	        <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
-	        <li><a ui-sref="about" ui-sref-active="active">About</a></li>
-			    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+	        <li><a ui-sref="home">Home</a></li>
+	        <li><a ui-sref="about">About</a></li>
 		    <ui-view></ui-view>
+		    <div id="helloWorldTest">Hello</div>
+		    <div id="divTestBox" style="height: 50px; width: 50px; background-color: #89BC38; position: absolute;"></div>
 		</div>
 		<!--<a href="directives.html">Experimenting with Directives</a>-->
 	</body>
+	<script>
+		$(document).ready(function(){
+		    $("#helloWorldTest").text("Yo");
+		    $("#divTestBox").animate({"left" : "200px"});
+
+		});
+	</script>
 </html>

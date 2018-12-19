@@ -2,11 +2,11 @@ var loginDetails = angular.module("loginApp",['ngResource']);
 
 loginDetails.component("welcomeNote",{
 	//template: "Hello There",
-	template: "<h1>{{$ctrl.welcome.titleName}}</h1>" + "<h2>{{$ctrl.welcome.note}}</h2>" + "<h3>{{$ctrl.welcome.loginNote}}</h3>",
+	template: "<h1>{{$ctrl.welcome.titleName}}</h1>",
 	controller: function(){
 		this.welcome = {
 			note: "Hello. Welcome to SampleApp.",
-			titleName: "SampleApp",
+			titleName: "Tax Assessments",
 			loginNote: "This is the login page.",
 			registerNote: "This is the registration page. Please register to login!"
 		};
@@ -27,7 +27,7 @@ loginDetails.controller("loginController", ['$scope','Users','$http', '$window',
 	      method: "POST",
 	      params: data,
 	    }).then(function successCallback(response) {
-	    	$window.location.href = '/hello'
+	    	$window.location.href = '/tax_assessments'
 	    }, function errorCallback(response){
 	    	$scope.status = response.data['message'];
 	    });

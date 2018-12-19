@@ -8,12 +8,11 @@
 </head>
 <body>
 	<div ng-app="loginApp">
-		<welcome-note></welcome-note>
-		<a href="../logins/new">Register Here</a><br><br>
 		<div ng-controller="loginController">
-			<form name="loginForm" ng-submit="loginAuth(loginDetails)">
-				<input ng-model="username" name="loginDetails.username" type="text" placeholder="Username"/><br>
-				<input ng-model="password" name="loginDetails.password" type="password" placeholder="Password" /><br>
+			<form name="loginForm" ng-submit="userRegistration()">
+				<input ng-model="username" name="username" type="text" placeholder="Username"/><br>
+				<input ng-model="email" name="password" type="email" placeholder="Email" /><br>
+				<input ng-model="password" name="password" type="password" placeholder="Password" /><br>
 				<input type="submit">
 				{{username + " " + password}}
 			</form>
@@ -21,5 +20,4 @@
 		</div>
 	</div>
 </body>
-
 </html>

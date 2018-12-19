@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20181211054240) do
+ActiveRecord::Schema.define(:version => 20181217112141) do
 
   create_table "albums", :force => true do |t|
     t.string   "albumname"
@@ -44,7 +44,6 @@ ActiveRecord::Schema.define(:version => 20181211054240) do
     t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "email"
     t.integer  "lock_version"
   end
 
@@ -76,6 +75,17 @@ ActiveRecord::Schema.define(:version => 20181211054240) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "user"
+  end
+
+  create_table "tax_assessments", :force => true do |t|
+    t.string   "Itr_type"
+    t.integer  "assessment_year"
+    t.float    "profit"
+    t.float    "revenue"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "AckNo",           :limit => 8
+    t.integer  "logins_id"
   end
 
 end

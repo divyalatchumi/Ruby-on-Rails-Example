@@ -40,7 +40,7 @@ class LoginsController < ApplicationController
 	def loginAuth
 		@username = params[:username]
     	@password = params[:password]
-    	puts @username + " " + @password
+    	#puts @username + " " + @password
 		if @username.nil? || @username.empty? || @password.nil? || @password.empty?
 			render :status => :not_implemented, :json => {:message => "Username and/or password cannot be empty"}
 		else

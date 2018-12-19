@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  logins: 
+  Itr_type: MyString
+  assessment_year: 1
+  profit: 1.5
+  revenue: 1.5
+
+two:
+  logins: 
+  Itr_type: MyString
+  assessment_year: 1
+  profit: 1.5
+  revenue: 1.5

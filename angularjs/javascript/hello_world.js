@@ -12,13 +12,8 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
             url: '/hello_world',
-            templateUrl: 'partial_hello_world.html' 
+            templateUrl: 'partial_hello_world.html',
         })
-
-        // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-        .state('about', {
-            url: '/hello_world',
-            templateUrl: 'partial_hello_world.html' 
-        });
         //$urlRouterProvider.otherwise('/hello_world');
 }]);
+
