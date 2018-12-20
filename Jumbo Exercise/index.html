@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/phoneApp.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-app="phoneApp">
+	<div class="overlay" onclick="closeCart()">
+	</div>
+	<header>
+		<h1 align="center">Phones</h1>
+	</header>
+	
+	<div  ng-controller="phoneController">
+		<div class=" w3-card" style="background: auto; width:40%; margin: auto auto 10px auto; padding: 10px" ng-repeat="phone in phones">
+			<table width="100%">
+				<tr>
+					<td rowspan="4" width="40%" align="center"><img ng-src="{{phone.icon}}" height="80%"></td>
+					<td colspan="2"><div class="phone_name1">{{phone.name}}</div></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>Brand: {{phone.brand}}</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>Variant: {{phone.variant}}</p></td>
+				</tr>
+				<tr>
+					<td>{{phone.price | currency:"₹":2}}</td>
+					<td align="right" ><button class="add" ng-click="addToCart($index)">Add To Cart</button></td>
+				</tr>
+			</table>
+		</div>
+		<div id="shoppingCart" class="sidenav">
+
+			<h2 style="margin-left: 10px">Shopping Cart</h2>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+			<div class="w3-card" style="background: auto; width:95%; margin: auto auto 10px auto; padding: 10px"  ng-repeat="phone in cartDetails">
+				<table width="100%">
+				<tr>
+					<td rowspan="4"><img ng-src="{{phone.icon}}" width="70%"></td>
+					<td colspan="2">{{phone.name}}</td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>Variant: {{phone.variant}}</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>Count: 
+						<button id="decrease" ng-click="decreaseQuantity($index)">-</button> 
+						{{phone.count}}
+						<button id="increase" ng-click="increaseQuantity($index)">+</button>
+					</p></td>
+				</tr>
+				<tr>
+					<td>{{phone.price | currency:"₹":2}}</td>
+					<td align="right"><button class="remove" ng-click="removeFromCart($index)">Remove</button></td>
+				</tr>
+			</table>
+
+			</div>
+		</div>
+
+	</div>
+	<script>
+		function closeCart(){
+			$('#shoppingCart').css('width', '0%');
+			$(".overlay").css('display',"none");
+		}
+	</script>
+</body>
+</html>
