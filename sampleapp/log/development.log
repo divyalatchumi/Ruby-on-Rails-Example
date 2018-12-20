@@ -45540,3 +45540,841 @@ Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/get
 
 Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 10:16:36) [GET]
 Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getAssessmentYears]
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#index (for 127.0.0.1 at 2018-12-19 12:18:23) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/index
+Completed in 11ms (View: 7, DB: 12) | 200 OK [http://localhost/tax_assessments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#showAll (for 127.0.0.1 at 2018-12-19 12:18:23) [GET]
+  [4;36;1mTaxAssessment Load (20.5ms)[0m   [0;1mSELECT * FROM `tax_assessments` WHERE (logins_id =6) [0m
+  [4;35;1mTaxAssessment Columns (5.7ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+Completed in 37ms (View: 1, DB: 26) | 200 OK [http://localhost/tax_assessments/showAll]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#index (for 127.0.0.1 at 2018-12-19 12:19:03) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tax_assessments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#showAll (for 127.0.0.1 at 2018-12-19 12:19:03) [GET]
+  [4;36;1mTaxAssessment Load (0.3ms)[0m   [0;1mSELECT * FROM `tax_assessments` WHERE (logins_id =6) [0m
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/showAll]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#index (for 127.0.0.1 at 2018-12-19 12:19:11) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/tax_assessments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#showAll (for 127.0.0.1 at 2018-12-19 12:19:11) [GET]
+  [4;36;1mTaxAssessment Load (0.4ms)[0m   [0;1mSELECT * FROM `tax_assessments` WHERE (logins_id =6) [0m
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+Completed in 12ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/showAll]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#index (for 127.0.0.1 at 2018-12-19 12:19:23) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tax_assessments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#showAll (for 127.0.0.1 at 2018-12-19 12:19:23) [GET]
+  [4;36;1mTaxAssessment Load (0.3ms)[0m   [0;1mSELECT * FROM `tax_assessments` WHERE (logins_id =6) [0m
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/showAll]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#index (for 127.0.0.1 at 2018-12-19 12:19:33) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/tax_assessments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#showAll (for 127.0.0.1 at 2018-12-19 12:19:33) [GET]
+  [4;36;1mTaxAssessment Load (0.4ms)[0m   [0;1mSELECT * FROM `tax_assessments` WHERE (logins_id =6) [0m
+  [4;35;1mTaxAssessment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/showAll]
+  [4;36;1mSQL (4.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#index (for 127.0.0.1 at 2018-12-19 15:21:52) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/index
+Completed in 18ms (View: 16, DB: 5) | 200 OK [http://localhost/tax_assessments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#showAll (for 127.0.0.1 at 2018-12-19 15:21:53) [GET]
+  [4;36;1mTaxAssessment Load (10.0ms)[0m   [0;1mSELECT * FROM `tax_assessments` WHERE (logins_id =6) [0m
+  [4;35;1mTaxAssessment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+Completed in 28ms (View: 1, DB: 11) | 200 OK [http://localhost/tax_assessments/showAll]
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (9.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#edit (for 127.0.0.1 at 2018-12-19 17:03:28) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/edit
+Completed in 21ms (View: 17, DB: 13) | 200 OK [http://localhost/tax_assessments/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 17:03:29) [GET]
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getAssessmentYears]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getItrTypes (for 127.0.0.1 at 2018-12-19 17:03:29) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getItrTypes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getTaxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:03:29) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTaxAssessment Columns (22.3ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;35;1mTaxAssessment Load (2.7ms)[0m   [0mSELECT * FROM `tax_assessments` WHERE (`tax_assessments`.`id` = 4) [0m
+Completed in 34ms (View: 1, DB: 25) | 200 OK [http://localhost/tax_assessments/getTaxAssessmentRecord?id=4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#edit (for 127.0.0.1 at 2018-12-19 17:09:06) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/edit
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/tax_assessments/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getItrTypes (for 127.0.0.1 at 2018-12-19 17:09:07) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getItrTypes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 17:09:07) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getAssessmentYears]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getTaxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:09:07) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTaxAssessment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;35;1mTaxAssessment Load (0.3ms)[0m   [0mSELECT * FROM `tax_assessments` WHERE (`tax_assessments`.`id` = 4) [0m
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/getTaxAssessmentRecord?id=4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#edit (for 127.0.0.1 at 2018-12-19 17:10:01) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getItrTypes (for 127.0.0.1 at 2018-12-19 17:10:01) [GET]
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getItrTypes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 17:10:01) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+
+NoMethodError (undefined method `getAssessmentYears' for #<Class:0x7fe1d14d27f8>):
+  app/controllers/tax_assessments_controller.rb:44:in `getAssessmentYears'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+Rendered rescues/_trace (23.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getTaxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:10:01) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mTaxAssessment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mTaxAssessment Load (0.3ms)[0m   [0;1mSELECT * FROM `tax_assessments` WHERE (`tax_assessments`.`id` = 4) [0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/getTaxAssessmentRecord?id=4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#edit (for 127.0.0.1 at 2018-12-19 17:10:26) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getItrTypes (for 127.0.0.1 at 2018-12-19 17:10:26) [GET]
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getItrTypes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 17:10:26) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mTaxAssessment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+
+NoMethodError (undefined method `getAssessmentYears' for #<Class:0x7fe1d158b8e8>):
+  app/controllers/tax_assessments_controller.rb:43:in `getAssessmentYears'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+Rendered rescues/_trace (22.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getTaxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:10:26) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTaxAssessment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;35;1mTaxAssessment Load (0.2ms)[0m   [0mSELECT * FROM `tax_assessments` WHERE (`tax_assessments`.`id` = 4) [0m
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/getTaxAssessmentRecord?id=4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#edit (for 127.0.0.1 at 2018-12-19 17:11:47) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/edit
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/tax_assessments/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getItrTypes (for 127.0.0.1 at 2018-12-19 17:11:47) [GET]
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/tax_assessments/getItrTypes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 17:11:47) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+
+NoMethodError (undefined method `getAssessmentYears' for #<Class:0x7fe1d13df8c8>):
+  app/controllers/tax_assessments_controller.rb:43:in `getAssessmentYears'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+Rendered rescues/_trace (83.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getTaxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:11:47) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mTaxAssessment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mTaxAssessment Load (0.2ms)[0m   [0;1mSELECT * FROM `tax_assessments` WHERE (`tax_assessments`.`id` = 4) [0m
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/getTaxAssessmentRecord?id=4]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#edit (for 127.0.0.1 at 2018-12-19 17:12:24) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/edit
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/tax_assessments/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getItrTypes (for 127.0.0.1 at 2018-12-19 17:12:24) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getItrTypes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 17:12:24) [GET]
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getAssessmentYears]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getTaxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:12:24) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mTaxAssessment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mTaxAssessment Load (0.3ms)[0m   [0;1mSELECT * FROM `tax_assessments` WHERE (`tax_assessments`.`id` = 4) [0m
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/getTaxAssessmentRecord?id=4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#edit (for 127.0.0.1 at 2018-12-19 17:13:44) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/edit
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/tax_assessments/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getItrTypes (for 127.0.0.1 at 2018-12-19 17:13:44) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mTaxAssessment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+
+NoMethodError (undefined method `ItrTypes' for #<Class:0x7fe1d14c39d8>):
+  app/models/tax_assessment.rb:19:in `getItrTypes'
+  app/controllers/tax_assessments_controller.rb:39:in `getItrTypes'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+Rendered rescues/_trace (24.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 17:13:44) [GET]
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getAssessmentYears]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getTaxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:13:44) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTaxAssessment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;35;1mTaxAssessment Load (0.3ms)[0m   [0mSELECT * FROM `tax_assessments` WHERE (`tax_assessments`.`id` = 4) [0m
+Completed in 9ms (View: 1, DB: 2) | 200 OK [http://localhost/tax_assessments/getTaxAssessmentRecord?id=4]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#edit (for 127.0.0.1 at 2018-12-19 17:14:08) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/edit
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/tax_assessments/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getItrTypes (for 127.0.0.1 at 2018-12-19 17:14:08) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mTaxAssessment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mTaxAssessment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+
+NoMethodError (undefined method `ItrTypes=' for #<Class:0x7fe1d1571768>):
+  app/models/tax_assessment.rb:7
+  app/controllers/tax_assessments_controller.rb:39:in `getItrTypes'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+Rendered rescues/_trace (27.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 17:14:08) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mTaxAssessment Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+
+NoMethodError (undefined method `ItrTypes=' for #<Class:0x7fe1d15f4910>):
+  app/models/tax_assessment.rb:7
+  app/controllers/tax_assessments_controller.rb:43:in `getAssessmentYears'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+Rendered rescues/_trace (28.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getTaxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:14:08) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mTaxAssessment Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mTaxAssessment Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+
+NoMethodError (undefined method `ItrTypes=' for #<Class:0x7fe1d132c1d8>):
+  app/models/tax_assessment.rb:7
+  app/controllers/tax_assessments_controller.rb:34:in `getTaxAssessmentRecord'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/share/rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+Rendered rescues/_trace (81.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#edit (for 127.0.0.1 at 2018-12-19 17:14:25) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/edit
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://localhost/tax_assessments/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getItrTypes (for 127.0.0.1 at 2018-12-19 17:14:25) [GET]
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getItrTypes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 17:14:26) [GET]
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getAssessmentYears]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getTaxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:14:26) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTaxAssessment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;35;1mTaxAssessment Load (0.3ms)[0m   [0mSELECT * FROM `tax_assessments` WHERE (`tax_assessments`.`id` = 4) [0m
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/getTaxAssessmentRecord?id=4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#update (for 127.0.0.1 at 2018-12-19 17:15:16) [POST]
+  Parameters: {"id"=>"4", "AckNo"=>"263584565685324", "revenue"=>"256", "Itr_type"=>"Itr-6s", "profit"=>"234", "assessment_year"=>"2016"}
+  [4;36;1mTaxAssessment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;35;1mTaxAssessment Load (0.2ms)[0m   [0mSELECT * FROM `tax_assessments` WHERE (`tax_assessments`.`id` = 4) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (1.6ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 263584565685324 AND `tax_assessments`.id <> 4) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/posts
+Rendering tax_assessments/update
+Completed in 53ms (View: 43, DB: 3) | 200 OK [http://localhost/tax_assessments/update?id=4&AckNo=263584565685324&Itr_type=Itr-6s&assessment_year=2016&id=4&profit=234&revenue=256]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#index (for 127.0.0.1 at 2018-12-19 17:15:16) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tax_assessments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#showAll (for 127.0.0.1 at 2018-12-19 17:15:17) [GET]
+  [4;35;1mTaxAssessment Load (0.5ms)[0m   [0mSELECT * FROM `tax_assessments` WHERE (logins_id =6) [0m
+  [4;36;1mTaxAssessment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+Completed in 12ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/showAll]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#new (for 127.0.0.1 at 2018-12-19 17:15:17) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/new
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/tax_assessments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getItrTypes (for 127.0.0.1 at 2018-12-19 17:15:18) [GET]
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/tax_assessments/getItrTypes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 17:15:18) [GET]
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getAssessmentYears]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:15:26) [POST]
+  Parameters: {"ack_no"=>"265324734523452", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2016"}
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.2ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 265324734523452) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 12ms (View: 4, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=265324734523452&assessment_year=2016&profit=234&revenue=234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:15:27) [POST]
+  Parameters: {"ack_no"=>"265324734523452", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2016"}
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.2ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 265324734523452) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 9ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=265324734523452&assessment_year=2016&profit=234&revenue=234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:15:27) [POST]
+  Parameters: {"ack_no"=>"265324734523452", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2016"}
+  [4;35;1mTaxAssessment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.2ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 265324734523452) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 8ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=265324734523452&assessment_year=2016&profit=234&revenue=234]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:15:30) [POST]
+  Parameters: {"ack_no"=>"265324734523452", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2016"}
+  [4;35;1mTaxAssessment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.3ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 265324734523452) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 10ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=265324734523452&assessment_year=2016&profit=234&revenue=234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#new (for 127.0.0.1 at 2018-12-19 17:15:31) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/tax_assessments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getItrTypes (for 127.0.0.1 at 2018-12-19 17:15:31) [GET]
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getItrTypes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 17:15:31) [GET]
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getAssessmentYears]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:15:36) [POST]
+  Parameters: {"ack_no"=>"315315325626234", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2017"}
+  [4;35;1mTaxAssessment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.2ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 315315325626234) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 9ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=315315325626234&assessment_year=2017&profit=234&revenue=234]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:15:37) [POST]
+  Parameters: {"ack_no"=>"315315325626234", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2017"}
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.2ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 315315325626234) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 9ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=315315325626234&assessment_year=2017&profit=234&revenue=234]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:15:37) [POST]
+  Parameters: {"ack_no"=>"315315325626234", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2017"}
+  [4;35;1mTaxAssessment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.3ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 315315325626234) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 10ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=315315325626234&assessment_year=2017&profit=234&revenue=234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:15:37) [POST]
+  Parameters: {"ack_no"=>"315315325626234", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2017"}
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.2ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 315315325626234) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 9ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=315315325626234&assessment_year=2017&profit=234&revenue=234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:15:37) [POST]
+  Parameters: {"ack_no"=>"315315325626234", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2017"}
+  [4;35;1mTaxAssessment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (6.5ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 315315325626234) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 55ms (View: 2, DB: 8) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=315315325626234&assessment_year=2017&profit=234&revenue=234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:15:38) [POST]
+  Parameters: {"ack_no"=>"315315325626234", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2017"}
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.3ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 315315325626234) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 9ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=315315325626234&assessment_year=2017&profit=234&revenue=234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:15:38) [POST]
+  Parameters: {"ack_no"=>"315315325626234", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2017"}
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.3ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 315315325626234) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 9ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=315315325626234&assessment_year=2017&profit=234&revenue=234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:15:38) [POST]
+  Parameters: {"ack_no"=>"315315325626234", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2017"}
+  [4;35;1mTaxAssessment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.2ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 315315325626234) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 9ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=315315325626234&assessment_year=2017&profit=234&revenue=234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#index (for 127.0.0.1 at 2018-12-19 17:16:09) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/tax_assessments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#showAll (for 127.0.0.1 at 2018-12-19 17:16:09) [GET]
+  [4;35;1mTaxAssessment Load (0.3ms)[0m   [0mSELECT * FROM `tax_assessments` WHERE (logins_id =6) [0m
+  [4;36;1mTaxAssessment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `tax_assessments`[0m
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/showAll]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#new (for 127.0.0.1 at 2018-12-19 17:16:11) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/tax_assessments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getItrTypes (for 127.0.0.1 at 2018-12-19 17:16:11) [GET]
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/tax_assessments/getItrTypes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#getAssessmentYears (for 127.0.0.1 at 2018-12-19 17:16:11) [GET]
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/tax_assessments/getAssessmentYears]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:16:17) [POST]
+  Parameters: {"ack_no"=>"236247435234234", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2016"}
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.3ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 236247435234234) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 9ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=236247435234234&assessment_year=2016&profit=234&revenue=234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:16:20) [POST]
+  Parameters: {"ack_no"=>"236247435234234", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2016"}
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.2ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 236247435234234) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 9ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=236247435234234&assessment_year=2016&profit=234&revenue=234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:16:23) [POST]
+  Parameters: {"ack_no"=>"236247435234234", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2016"}
+  [4;35;1mTaxAssessment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.2ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 236247435234234) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering tax_assessments/taxAssessmentRecord (not_implemented)
+Completed in 9ms (View: 1, DB: 1) | 501 Not Implemented [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=236247435234234&assessment_year=2016&profit=234&revenue=234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#taxAssessmentRecord (for 127.0.0.1 at 2018-12-19 17:17:04) [POST]
+  Parameters: {"ack_no"=>"236247435234234", "revenue"=>"234", "Itr_type"=>"Itr-6", "profit"=>"234", "assessment_year"=>"2016"}
+  [4;35;1mTaxAssessment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTaxAssessment Load (0.2ms)[0m   [0mSELECT `tax_assessments`.id FROM `tax_assessments` WHERE (`tax_assessments`.`AckNo` = 236247435234234) LIMIT 1[0m
+  [4;36;1mTaxAssessment Create (1.0ms)[0m   [0;1mINSERT INTO `tax_assessments` (`logins_id`, `AckNo`, `revenue`, `updated_at`, `Itr_type`, `profit`, `assessment_year`, `created_at`) VALUES(6, 236247435234234, 234.0, '2018-12-19 11:47:04', 'Itr-6', 234.0, 2016, '2018-12-19 11:47:04')[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCOMMIT[0m
+Rendering tax_assessments/taxAssessmentRecord (ok)
+Completed in 14ms (View: 1, DB: 5) | 200 OK [http://localhost/tax_assessments/taxAssessmentRecord?Itr_type=Itr-6&ack_no=236247435234234&assessment_year=2016&profit=234&revenue=234]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#index (for 127.0.0.1 at 2018-12-19 17:17:04) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://localhost/tax_assessments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#showAll (for 127.0.0.1 at 2018-12-19 17:17:04) [GET]
+  [4;36;1mTaxAssessment Load (0.3ms)[0m   [0;1mSELECT * FROM `tax_assessments` WHERE (logins_id =6) [0m
+  [4;35;1mTaxAssessment Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/tax_assessments/showAll]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#index (for 127.0.0.1 at 2018-12-19 18:28:03) [GET]
+Rendering template within layouts/posts
+Rendering tax_assessments/index
+Completed in 16ms (View: 14, DB: 2) | 200 OK [http://localhost/tax_assessments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TaxAssessmentsController#showAll (for 127.0.0.1 at 2018-12-19 18:28:03) [GET]
+  [4;36;1mTaxAssessment Load (10.9ms)[0m   [0;1mSELECT * FROM `tax_assessments` WHERE (logins_id =6) [0m
+  [4;35;1mTaxAssessment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tax_assessments`[0m
+Completed in 29ms (View: 1, DB: 12) | 200 OK [http://localhost/tax_assessments/showAll]

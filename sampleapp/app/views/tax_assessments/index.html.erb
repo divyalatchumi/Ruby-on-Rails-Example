@@ -17,8 +17,8 @@
     <td>{{x.tax_assessment.Itr_type}}</td>
     <td>{{x.tax_assessment.assessment_year}}</td>
     <td>{{x.tax_assessment.AckNo}}</td>
-    <td>Rs. {{x.tax_assessment.profit}}</td>
-    <td>Rs. {{x.tax_assessment.revenue}}</td>
+    <td>{{x.tax_assessment.profit | currency:"₹":2}}</td>
+    <td>{{x.tax_assessment.revenue | currency:"₹":2}}</td>
     <td><button ng-click="editRecord(x.tax_assessment.id)" value="Edit">Edit</button></td>
     <td><button ng-click="deleteRecord(x.tax_assessment.id)" onclick="return confirm('Are you sure you want to delete this tax assessment?');" value="Delete">Delete</button></td>
   </tr>
