@@ -76,17 +76,35 @@ body, html {
   z-index: 2;
 }
 
+.countButton{
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 32px;
+  padding: 5px 10px;
+  cursor: pointer;
+  height:50%;
+  width:100%;
+  opacity:  0.6
+}
 .remove{
 	background-color: red;
-	border: none;
-	color: white;
-	text-align: center;
-	display: inline-block;
-	font-size: 16px;
- 	padding: 5px 10px;
- 	cursor: pointer;
 }
 
+#increase{
+  background-color:grey;
+
+}
+#decrease{
+  background-color: grey;
+}
+.text{
+  color: black;
+  font-size: 24px;
+  align-content: center;
+  padding: 0px 0px 0px 0px;
+}
 .add{
 	background-color: grey;
 	border: none;
@@ -96,4 +114,15 @@ body, html {
 	font-size: 16px;
  	padding: 5px 10px;
  	cursor: pointer;
+}
+
+.add:hover{
+  color: yellow;
+}
+
+.tableDisplay{
+	display: block;
+}
+.tableHide{
+	display: none;
 }

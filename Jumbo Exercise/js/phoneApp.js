@@ -39,10 +39,12 @@ app.controller('phoneController',['$scope', function($scope){
 			$scope.cartDetails.push($scope.phones[index]);
 			$scope.cartDetails[$scope.cartDetails.length-1].count = 1;
 		}
+		updatePrice();
 	};
 
 	$scope.removeFromCart = function(index){
 		$scope.cartDetails.splice(index, 1);
+		updatePrice();
 	}
 
 	$scope.increaseQuantity = function(index){
@@ -50,6 +52,7 @@ app.controller('phoneController',['$scope', function($scope){
 		$scope.cartDetails[index].count +=1;
 		if ($scope.cartDetails[index].count == 3)
 			$('button#increase').attr('disabled',true);
+		updatePrice();
 	}
 
 	$scope.decreaseQuantity = function(index){
@@ -57,5 +60,14 @@ app.controller('phoneController',['$scope', function($scope){
 		$scope.cartDetails[index].count -=1;
 		if ($scope.cartDetails[index].count == 0)
 			$('button#decrease').attr('disabled',true);
+		updatePrice();
+	}
+
+	
+	var updatePrice = function(){
+		$scope.totalPrice = 0;
+		for (var i = 0; i<$scope.cartDetails.length; i++){
+			$scope.totalPrice += $scope.cartDetails[i].count * $scope.cartDetails[i].price;
+		}
 	}
 }]);

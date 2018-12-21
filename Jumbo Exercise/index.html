@@ -10,6 +10,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body ng-app="phoneApp">
+	<script type="text/javascript">
+		hidePhoneDetails = function(){
+			$(event.currentTarget).css('display','none');
+			$(event.currentTarget).siblings('.countDetails').css('display','block');
+		}
+		showPhoneDetails = function(){
+			$(event.currentTarget).siblings('.phoneDetails').css('display','block');
+			$(event.currentTarget).css('display','none');
+		}
+	</script>
 	<div class="overlay" onclick="closeCart()">
 	</div>
 	<header>
@@ -17,6 +27,8 @@
 	</header>
 	
 	<div  ng-controller="phoneController">
+
+		<!--Phone List -->
 		<div class=" w3-card" style="background: auto; width:40%; margin: auto auto 10px auto; padding: 10px" ng-repeat="phone in phones">
 			<table width="100%">
 				<tr>
@@ -35,32 +47,52 @@
 				</tr>
 			</table>
 		</div>
+
+		<!--Shopping Car Side Bar -->
 		<div id="shoppingCart" class="sidenav">
 
 			<h2 style="margin-left: 10px">Shopping Cart</h2>
 			<a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
-			<div class="w3-card" style="background: auto; width:95%; margin: auto auto 10px auto; padding: 10px"  ng-repeat="phone in cartDetails">
-				<table width="100%">
-				<tr>
-					<td rowspan="4"><img ng-src="{{phone.icon}}" width="70%"></td>
-					<td colspan="2">{{phone.name}}</td>
-				</tr>
-				<tr>
-					<td colspan="2"><p>Variant: {{phone.variant}}</p></td>
-				</tr>
-				<tr>
-					<td colspan="2"><p>Count: 
-						<button id="decrease" ng-click="decreaseQuantity($index)">-</button> 
-						{{phone.count}}
-						<button id="increase" ng-click="increaseQuantity($index)">+</button>
-					</p></td>
-				</tr>
-				<tr>
-					<td>{{phone.price | currency:"₹":2}}</td>
-					<td align="right"><button class="remove" ng-click="removeFromCart($index)">Remove</button></td>
-				</tr>
-			</table>
-
+			<div class="w3-card" style="height:150px;background: auto; width:95%; margin: auto auto 10px auto"  ng-repeat="phone in cartDetails">
+				<table width="100%"  height="145px" cellpadding="0" cellpadding="0">
+					<tr>
+						<td width="30%"><img ng-src="{{phone.icon}}" height="130px"></td>
+						<td align="center" class="phoneDetails" onmouseenter="hidePhoneDetails()" >
+							<div >
+							<table cellpadding='0' height="140px" >
+								<tr>
+									<td>
+										{{phone.name}}<br>
+										Variant: {{phone.variant}}<br>
+										Count: {{phone.count}}<br>
+										<span style="text-align: right;">{{phone.price | currency:"₹":2}}</span>
+									</td>
+								</tr>
+							</table>
+							</div>
+						</td>
+						<td class="countDetails" style="display: none" onmouseleave="showPhoneDetails()">
+							<div>
+							<table height="140px" width="100%"> 
+								<tr align="center">
+									<td width="25%">
+										<button id="decrease" class="countButton" ng-click="decreaseQuantity($index)">-</button> </td>
+									<td width="25%">
+										<div  class="text">{{phone.count}}</div></td>
+									<td width="25%">
+										<button id="increase" class="countButton" ng-click="increaseQuantity($index)">+</button></td>
+									<td width="25%" ><button class="remove countButton" ng-click="removeFromCart($index)">&times;</button></td>
+								</tr>
+							</table>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<hr>
+			<div align="right" style="padding-right: 10px">
+				Total</br>
+				<span style="font-size: 20px">{{totalPrice | currency:"₹":2 }}</span>
 			</div>
 		</div>
 
@@ -69,7 +101,8 @@
 		function closeCart(){
 			$('#shoppingCart').css('width', '0%');
 			$(".overlay").css('display',"none");
-		}
+		};
+
 	</script>
 </body>
 </html>
