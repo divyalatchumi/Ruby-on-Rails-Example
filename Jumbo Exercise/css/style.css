@@ -126,3 +126,14 @@ body, html {
 .tableHide{
 	display: none;
 }
+
+.cartButton {
+  border: none;
+  color: white;
+  text-align: center;
+  float: right;
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: grey
+}
