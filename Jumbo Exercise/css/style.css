@@ -86,19 +86,13 @@ body, html {
   cursor: pointer;
   height:50%;
   width:100%;
-  opacity:  0.6
+  opacity:  0.6;
+  background-color:grey;
 }
 .remove{
 	background-color: red;
 }
 
-#increase{
-  background-color:grey;
-
-}
-#decrease{
-  background-color: grey;
-}
 .text{
   color: black;
   font-size: 24px;

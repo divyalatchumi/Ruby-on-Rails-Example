@@ -24,16 +24,23 @@ app.controller('phoneController',['$scope', function($scope){
 		   brand: "HUAWEI",
 		   variant: "Purple",
 		   price: 41915
+		},
+		{
+		   id: 4,
+		   name: "SAMSUNG GALAXY S9 DUAL SIM, 128gb",
+		   icon: "img/samsung_s9.png",
+		   price: 42072,
+		   brand: "SAMSUNG",
+		   variant: "Black"
 		}
 	];
 	$scope.cartDetails = [];
 	$scope.addToCart = function(index){
-
 		$("#shoppingCart").css('width', "25%");
 		$(".overlay").css('display',"block");
 		cartIndex = $scope.cartDetails.indexOf($scope.phones[index]);
 		if (cartIndex>=0){
-			$scope.cartDetails[cartIndex].count = $scope.cartDetails[cartIndex].count+ 1;
+			$scope.cartDetails[cartIndex].count +=1;
 		}
 		else{
 			$scope.cartDetails.push($scope.phones[index]);
@@ -48,18 +55,18 @@ app.controller('phoneController',['$scope', function($scope){
 	}
 
 	$scope.increaseQuantity = function(index){
-		$('button#decrease').attr('disabled',false);
+		$(event.currentTarget).parent().siblings('#decrease').children().attr('disabled',false);
 		$scope.cartDetails[index].count +=1;
 		if ($scope.cartDetails[index].count == 3)
-			$('button#increase').attr('disabled',true);
+			$(event.currentTarget).attr('disabled',true);
 		updatePrice();
 	}
 
 	$scope.decreaseQuantity = function(index){
-		$('button#increase').attr('disabled',false);
+		$(event.currentTarget).parent().siblings('#increase').children().attr('disabled',false);
 		$scope.cartDetails[index].count -=1;
-		if ($scope.cartDetails[index].count == 0)
-			$('button#decrease').attr('disabled',true);
+		if ($scope.cartDetails[index].count == 1)
+			$(event.currentTarget).attr('disabled',true);
 		updatePrice();
 	}
 

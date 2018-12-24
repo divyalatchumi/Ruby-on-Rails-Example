@@ -79,12 +79,12 @@
 							<div>
 							<table height="140px" width="100%"> 
 								<tr align="center">
-									<td width="25%">
-										<button id="decrease" class="countButton" ng-click="decreaseQuantity($index)">-</button> </td>
-									<td width="25%">
+									<td id="decrease" width="25%">
+										<button class="countButton" ng-click="decreaseQuantity($index)" disabled="true">-</button> </td>
+									<td id="count" width="25%">
 										<div  class="text">{{phone.count}}</div></td>
-									<td width="25%">
-										<button id="increase" class="countButton" ng-click="increaseQuantity($index)">+</button></td>
+									<td id="increase" width="25%">
+										<button class="countButton" ng-click="increaseQuantity($index)">+</button></td>
 									<td width="25%" ><button class="remove countButton" ng-click="removeFromCart($index)">&times;</button></td>
 								</tr>
 							</table>
@@ -110,7 +110,6 @@
 			$('#shoppingCart').css('width', '0%');
 			$(".overlay").css('display',"none");
 		};
-
 	</script>
 </body>
 </html>
