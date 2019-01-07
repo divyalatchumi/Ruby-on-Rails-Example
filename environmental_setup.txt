@@ -1,9 +1,9 @@
 #Download git and copy the ruby on rails repository
 sudo apt-get install git
-git config --global user.name "Divyalatchumi Nakkeerar"
-git config --global user.email "divyalatchumi@gmail.com"
+git config --global user.name <name>
+git config --global user.email <emailID>
 git config --global color.ui auto
-ssh-keygen -t rsa -C "divyalatchumi@gmail.com"
+ssh-keygen -t rsa -C <github-emailID>
 cat ~/.ssh/id_rsa.pub
 git clone "git link"
 
@@ -11,6 +11,9 @@ git clone "git link"
 sudo apt-get update
 sudo apt-get install rvm
 rvm install 1.8.7
+
+(In case of error 23, https://github.com/rvm/rvm/issues/4515)
+
 gem install rails --version 2.3.8
 gem update --system 1.5.3
 
@@ -45,4 +48,3 @@ rake (0.8.7)
 rubygems-bundler (1.4.5)
 rubygems-update (1.5.3)
 rvm (1.11.3.9)
-divyalatchumi@di
